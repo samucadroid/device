@@ -1,0 +1,18 @@
+[
+   {
+      "name":"Moto G 2015",
+      "brand":"Motorola",
+      "codename":"osprey",
+      "afh_folder":"https://www.androidfilehost.com/?w=files&flid=179031",
+      "maintainer_name":"JBCDroid",
+      "xda_thread":"https://forum.xda-developers.com/2015-moto-g/development/rom-viperos-v1-0-moto-g-2015-t3610138"
+   },
+   {
+      "name":"Moto G 2014 LTE",
+      "brand":"Motorola",
+      "codename":"thea",
+      "afh_folder":"https://www.androidfilehost.com/?w=files&flid=182245",
+      "maintainer_name":"Rkschunk",
+      "xda_thread":"https://forum.xda-developers.com/moto-g-lte/development/rom-viperos-v1-0-moto-g-2014-lte-t3609920"
+   }
+]
