@@ -1,0 +1,1087 @@
+====================
+     05-28-2017
+====================
+
+
+   * build/
+5b8480afe Revert "Just Team"
+
+   * device/lge/d855/
+3deaca8 fix depso
+45ca0ae ViperOS IFY
+
+   * device/motorola/falcon/
+3530665 update deps
+
+   * device/oneplus/oneplus2/
+d9c1877 update deps
+cf5ab79 ViperOS IFY
+
+   * device/oneplus/oneplus3/
+8ee427f Fix text color
+8bbae3b Fix theme
+c9dd424 track our devicesettings
+
+   * frameworks/base/
+4b9f1ee5c68 Fix derps
+2c2ddc1d7f6 STATUS_BAR_CUSTOM_HEADER_SHADOW: Fix observer
+db9e7bf2dd3 NetworkTraffic: Dont show wrong values when connected to VPN
+39ad53a183e Lockscreen PIN quick unlock [1/2]
+240a8ca6023 DocumentsUI: Change primary dark color
+64e7e38b860  Show 4G intead of LTE switch[1/2]
+e10f22ceecf tuner: Remove clock pref
+ad34726ea5e base: Clean up systemUI tuner
+794a908bbaa base: notifications: DEFAULT_LIGHTS and FLAG_SHOW_LIGHTS must count as noisy
+44404e1ba0f Frameworks AppOps: Enable MODE_IGNORED for OP_WAKE_LOCK
+3013bf5e3ef CaptivePortal: login activity UI improvements
+0d1facc5e18 Fix an apk icon animation corruption issue
+c500fced782 Fix crash by IllegalStateException in sendAccessibilityEvent
+f75a4664eae Daynight: Fix font size
+a611c8ab323 FWB:Add a Switch to Enable Disable Dyanamic Navbar[1/2] Everything works as it should. To see changes within the app after enabling/disabling this switch, app must be restarted everytime switch is toggled .
+
+   * manifest/
+0cc4359 Remove more shits
+
+   * packages/apps/CMParts/
+75bf9c1 CMParts: Strip weather service
+
+   * packages/apps/Jelly/
+576d1b9 Jelly: Make download_message not specific to sdcard
+
+   * packages/apps/Settings/
+343c0495d Lockscreen PIN quick unlock [2/2]
+cc2d87a5b Settings: Add back demo mode
+e9449844c Settings: Remove unused weather stubs
+e2b457bb3 Remove OTA preference if build isn't official or app isn't installed
+
+   * packages/apps/VPapers/
+7b8effb Merge pull request #2 from Andersonmendes2016/nougat
+34f566b VPapers: some fixes
+
+   * packages/apps/Venom/
+29b4e36 Show 4G instead of LTE Switch [2/2]
+d1d1cb0 Settings:Add a Switch to Enable Disable Dyanamic Navbar[2/2]
+cadba09 Restart SystemUI on toggle navigation bar visibility
+018ee45 Update PT-BR translations
+
+   * packages/apps/ViperOTA/
+4c088c05 Update theme
+a76a4857 Implement android_version variable
+
+   * packages/resources/devicesettings/
+fe02335 Fix PT-BR translation
+
+   * vendor/viper/
+3d53a6c5 crdroid: Disable weather provider
+e87af587 Change OTA url and add ro.viper.buildtype prop
+c3dc37d0 Viper v1.1
+
+====================
+     05-27-2017
+====================
+
+
+   * build/
+8379b262f Clean option: deviceclean
+
+   * device/oneplus/oneplus3/
+df48a5a - track our oppo/qcom - track devicesettings from LineageOS
+c143684 fix dependencies sync
+087b6b3 add qcom/common dep
+65f8bb6 ViperOS IFY
+
+   * frameworks/base/
+2421683f5d0 SystemUI: Misc fixes for right (custom) lockscreen shortcuts
+902825a1628 base: enable power save config of system apps [1/2]
+8a266f6ac61 use FgThread.class instead of UiThread.class for lock object
+e8d7a5d2e94 Timeout should not include sleep time.
+d43d6c9f218 Fixes sharedUserId change issue.
+a4d641b49c9 an extra animation when finish a visible paused activity
+d538e6be0e3 Fix a crashed when clicking list item and button meanwhile
+535a12ebf7b Make BluetoothStateChangeCallback oneway to prevent waiting on response.
+b2a4c10f881 skip schedule broadcast and startservice if the user is stopped
+86071d8a354 Fix derps
+2330c1767fe Revert "Left handed navbar during landscape mode"
+6172de31af0 DayNight: Change derp again
+54c451dd531 Revert "Scroll: modified velocitytracker"
+5f2db62221c Base: Navigation bar options (1/2)     -Height and width
+ea80f706dfc input: support dynamic navigation bar toggling
+1cb88d4f242 Fix build
+6fbf2568612 Revert "Runtime toggle of navbar"
+039c4573aff update navbar icons and pixel c dimensions     *navbar icons from pixel c, pixel, pixel xl     *we still need some more icons made for the other dpis     *add pixel c opa dimens
+
+   * manifest/
+6d592a5 Track VPapers
+9186ed5 Track FMRadio LineageOS -> ViperOS
+5435fc4 manifest: Rename to ViperOS-Devices
+
+   * packages/apps/CMParts/
+73d1d36 CMParts: remove extra padding from app light preference
+
+   * packages/apps/FMRadio/
+2c2520d FMRadio: Add overlay to enable/disable FM without Headphone
+e9fcff3 Use FMRadio without wired headset/headphones
+
+   * packages/apps/Jelly/
+8f1365c Jelly: Handle screenLayout changes
+
+   * packages/apps/PackageInstaller/
+4e7827f6 DayNight theme
+
+   * packages/apps/Settings/
+c40d226d4 Display a summary related to automatic brightness only if relevant for this device
+23fed6fd7 ConditionManager: don't crash when trying to add unexpected condition
+70791f0db Settings: PreviewPagerAdapter: copy the full theme
+200a02b5f Fix time does not change after rotating device
+9affd906f Settings: enable power save config of system apps [2/2]
+dfd58652e Squash commit of SAR and IC Code.
+8d4086650 Fix crash when calling remove() with a null variable
+35a7b17ae do not include saved network in scan list
+3bb0d021e Revert "Implement device gestures and doze settings in Gestures section"
+dd3ea2e7c Revert "Fix derps"
+
+   * packages/apps/VPapers/
+74cad02 Merge pull request #1 from Andersonmendes2016/nougat
+7ffed4f VPapers: Add Wallpapers
+bea1891 VPapers: remove SolidColor
+
+   * packages/apps/Venom/
+955e424 HW Keys backlight: Adjustments
+f1f7a66 Updates
+91dc67f Don't show button backlight as enabled when hwkeys is disabled
+bc74469 Navbar dimension: Remove 0dp
+e271cfc Settings: Navigation bar options (2/2) -Height and width
+1e7ae96 HW keys tweaks (2/2)
+a899b82 Navigation bar enable/disable
+a08ed46 CustomSeekBar: fix progressbar glitch with custom min-max values when CustomSeekBar is called, it does: mSeekBar.setMax(mMax - mMin); assuming mMin=0 and mMax=100 if they are not set with settings:min or max through the related menu xml. So if we set one of those values in the related menu java class with the available public voids (setMax(value) and setMin(value)) the seekbar doesn't get the new min and max thus the user can't slide it to the max position.
+e6fbaa9 Move navbar to button settings
+6ee04c4 Move Ability to hide superuser status bar icon for misc
+
+   * packages/apps/ViperOTA/
+7f44d31b Rename Viper to ViperOS
+d725650d Automatic translation import
+76d4f483 Replace generic logo with back button
+
+   * packages/services/Telephony/
+f5fc7f4b Merge remote-tracking branch 'los/cm-14.1' into nougat
+9d67fcae Fix minor inconsistency in the CDMA call settings
+
+   * system/sepolicy/
+3b9c74b sepolicy: Allow priv_app to run su_exec()
+
+   * vendor/viper/
+252b4cb1 Build VPapers
+8d3f53d4 overlay: Enable Wi-Fi by default on first boot
+4b6dee11 Show full alarm info
+c7026f94 Go away mint, nobody likes you
+6842a314 Change accent color for AOSP keyboard
+8bfcbf55 roomservice: Rename to ViperOS-Devices
+29117cd1 OTA: Add missing prop
+79d9aec2 Merge branch 'nougat' of https://github.com/ViperOS-Project/android_vendor_viper into nougat
+cf589225 roomservice: fix a weird error
+
+====================
+     05-26-2017
+====================
+
+
+   * device/motorola/falcon/
+ac06314 Update our dependencies:
+
+   * frameworks/base/
+51051c96fac [Base] HW keys tweaks (1/2) PS: to enable this feature you need to set to true <bool name="config_hwKeysPref">true</bool> in device overlay. Of course this is for devices with hardware and capacitive keys ;)
+d20644ba069 notifications: Change guts text color
+559d5a952f6 Net monitor: fix visual glitch on statusbar expand when autohide enabled
+f52a8f88fb1 remove network coloring and make network meter play nice with dark mode
+78771076d97 Link traffic icon color to text color
+d96c8ecc980 Bluetoothtile: Rectify and fix compilation
+44350e75031 FWB: Ability to hide superuser status bar icon [1/2]
+ff8a3f8dc8f NetworkTraffic: Hide when not connected to network
+28e944ead5b Scroll: modified velocitytracker
+95bbba5b7e1 Add keylayout for Xbox One controller
+18a54c479f5 Make the allPendingIntents add operation thread-safe.
+436c8868225 ConnectivityService: safer locking
+293cd5230d2 Added mapping files for DualShock3 and DualShock4
+49f9cffd176 When monkey test, the object of mHost throws NullPointerException.
+cb927e8afbb Fix NPE when call stack.setLauncheTime.
+ef49982f608 fix incorrect context classloader initialization in system_server
+f6c7cf316ab Ensure qs detail item isn't focusable
+1444c1ecc99 QS BluetoothTile proiritizes connected device
+f9e5af79d35 QSTiles: set disconnect callback in bluetooth details list adapter
+54b381185f0 Allow WiFi & Bluetooth tile details to scroll
+5471aad48e1 Allow themers to customize battery frame color on darkintensity
+301a4796cb4 Big battery circle: fix custom themes compatibility
+eb9acb529fb Make the view more compact and show more entries per page
+ea7d467d39d sqlite query perf: try to avoid getCount()
+8d0b1a327a0 sqlite query perf: clean up in-flight statements on cursor close
+52a9db2a1e5 sqlite query perf: try to reuse in-flight statements
+a3afd5325d2 sqlite query perf: better window selection in common case
+fdd8d8ea2e8 Limit the number of start or bind service
+e6cb71a12d1 Do not remove the alarm listener if it still need to be used
+e071a956547 Fix the IndexOutOfBoundsException issue.
+dd323b395d6 Fix double free issue in ResTable.
+bd160702d8c Make sdcard volumes visible even when FBE is enabled
+b4b2e7a34ba Consider allow-in-power-save-except-idle whitelist while updating rules.
+ba8242f93bf system_server crash in ArrayMap.
+5af833cf2c3 Format Japanese numbers using national format when in Japan.
+84a62f3870e base: update updateUsbStateBroadcastIfNeeded types
+dce9a4c488f Check and send usb state broadcast when devices boots
+b72d072ca7f Only send usb disconnect intents after boot.
+6d2927627ef Revert "SystemUI: attach a queue to media player notifications"
+04be5b8075c More theme changes Thanks to @Adarsh-MR
+
+   * packages/apps/Settings/
+617c60b51 Avoid FC when entering Accessibility Settings with a font size of 100%
+c1bb31bfd DisplaySettings: font size in 5% steps from 80% to 130%
+83bbfce44 OTA: Update activity name
+
+   * packages/apps/VPapers/
+655225e fix build
+
+   * packages/apps/Venom/
+e5dd2ec Fix derp
+a430ae5 Ability to hide superuser status bar icon [2/2]
+
+   * packages/apps/ViperOTA/
+3a191166 ViperOTA Bringup
+
+   * vendor/viper/
+dd94ac20 OTA: Adjust and build only in official
+
+====================
+     05-25-2017
+====================
+
+
+   * device/motorola/msm8226-common/
+679f243 Theme changes
+
+   * kernel/oneplus/msm8996/
+7621d191674 update defconfig
+e2321c993d8 Merge remote-tracking branch 'lineageos/cm-14.1' into ElementalX-3.00-los
+
+   * packages/apps/CMParts/
+81865db Automatic translation import
+b3a4827 Fix theming
+
+   * packages/apps/Email/
+c0e5d54c0 Search in folder specified via URI parameter, if possible.
+
+   * packages/apps/Jelly/
+c9f336c Jelly: Pause WebView along with the activity
+c23c013 Jelly: Don't claim to be a simple WebView
+c218521 Jelly: Define base class for Activities containing WebViewExt
+1607c0d Jelly: Make it easier to initiate gestures
+978e74e Jelly: Don't leak fileoutputstream if bm is null
+
+   * packages/apps/OmniStyle/
+4cf364f Update PT-BR translations
+
+   * packages/apps/Settings/
+f1684ad55 Fix derps
+eae5c9a53 Implement device gestures and doze settings in Gestures section
+1d106283a Fix suggestion background color
+
+   * packages/apps/UnifiedEmail/
+5462df5cd Pass selected folder to message search.
+
+   * packages/apps/Venom/
+05d9372 DarkMode: remove automatic
+9a94211 Updates
+
+   * packages/services/OmniJaws/
+27b1c1a Change api key
+
+   * packages/services/Telephony/
+cfc61746 Merge remote-tracking branch 'los/cm-14.1' into nougat
+
+====================
+     05-24-2017
+====================
+
+
+   * build/
+880c524e8 Drop deprecated stuff/move stuff to vendor/device (squashed)
+416aa35b3 Convert -j to a reasonable parallelism for kati
+a8f9d7f2b Remove bootclasspath handling for Jack
+341ddb8bd Remove static libraries from Jack classpath
+8fb956815 Use ASAN prebuilts if SANITIZE_HOST includes address
+f43c5f2b1 Use more prebuilt build-tools
+157d7c29e Update prebuilt build tools path
+ae4f6cb6d Prevent Kati from seeing MAKEFLAGS
+f35fff52a Ccache configuration improvements
+6cc8f3e77 Switch back to mksh as the default
+13776755a Don't prune $(OUT_DIR) from findleaves.py
+f1019b9c2 Propagate signals through makeparallel
+039b46108 exec makeparallel
+f5f9e1e56 Revert "Remove -d keepdepfile from ninja command line"
+68161835d Update combined build.ninja to depend on Soong's build.ninja
+2185df863 Kill some log spam
+a608d543f Add root support for Tasker when using Magisk SU
+af2a6b128 Remove more apps
+a900d7d7b Use release-keys here too
+24fd3e684 Fix changelog filename
+
+   * device/motorola/falcon/
+f42d5c0 fix deps
+
+   * frameworks/base/
+d69ed164b1b Fix settings header alignment
+7e8b015aa5e Add INTENT_RESTART_SYSTEMUI action Idea taken from https://github.com/DirtyUnicorns/android_external_DUtils/blob/n7x/src/com/android/internal/utils/du/DUSystemReceiver.java
+6bd6e625e8e Base: API to restart SystemUI without root Change-Id: I4ce4762bee82d40daf49bacc846786bc9a3d938f Signed-off-by: Corey Edwards <ensabahnur16@gmail.com> Signed-off-by: Varun Date <date.varun123@gmail.com>
+4df7ae49d76 Rename SettingsDrawerActivity header logo Conflicting with https://github.com/ViperOS-Project/android_packages_apps_Settings/commit/d0992f30b50789f963bd3fc499940e3e5cea4b69
+580e51f21f0 Correct slider position
+d85df2aad5f Fix Some layout adjustments
+c561799a803 Update Settings drawer header logo
+79fd31fd222 Use Google Nexus Audio Files [1/3]
+f8b9718a8b9 Theme changes
+e80aae20cdb Revert "Revert "Some layout adjustments""
+f93db60df36 QSPanel: Fix missing setting after merge derp
+07491c224d0 SystemUI: Do not use LOS auto brightness implementation
+8eb99dd63e6 Fix lag when opening an entry from the Settings left drawer
+ee95b3f41a4 Add SettingsDrawerActivity header
+
+   * manifest/
+72093bb I have TOC
+1f4d8c1 Track prebuilts/build-tools
+cd2560f Update the Viper Github name
+
+   * packages/apps/Calendar/
+557bc2ed Russian translations
+db3aebbb Import Calendar Widget
+9a723c9b Hungarian translation
+d9006097 French Translations
+
+   * packages/apps/FlipFlap/
+1d5c620 FlipFlap: add support for smaller View window covers
+
+   * packages/apps/Gallery2/
+e41621f81 Hungarian translation
+
+   * packages/apps/OmniStyle/
+43c9e10 add Team ViperOS headers
+
+   * packages/apps/Settings/
+b6b0ed068 Properly remove root access under DevSettings
+b578eb2b9 Cleanup
+
+   * packages/apps/Venom/
+5ff0cb8 Restart systemui without root
+
+   * packages/services/Telephony/
+96a9e3ca telephony: Fix and move CAF strings
+
+   * vendor/cmsdk/
+f3d7492 Merge remote-tracking branch 'los/cm-14.1' into nougat
+
+   * vendor/viper/
+8c69082a Build Gallery2
+c47941d9 backuptool: Fix for 7.1
+6509b8b2 Add substratum Also remove Jelly
+8fd8ecd1 Add ViaBrowser
+
+====================
+     05-23-2017
+====================
+
+
+   * build/
+3aed4cbb2 core: Remove color leftover
+3043be77e build: Conditionally disable ccache for modules with FDO enabled
+5e6264363 OMS-N: adb shell command to access OverlayManagerService
+
+   * frameworks/base/
+749a3289222 Remove venon long click easter egg
+bcd68fdeb7a Merge remote-tracking branch 'los/cm-14.1' into wip
+cf9054f062a Revert "Revert "SystemUI: Fix QSTileHost exception""
+bc78d1ad217 SettingsProvider: Add missing INTERACT_ACROSS_USERS_FULL permission
+33af0223e32 Fix screenpinning from showing up unless enabled
+e861e9c0384 base: Screen pinning improvements
+f378f76e831 Stop holding mProxyLock while downloading PAC script data.
+ddf1d3bd24d NullPointerException: Attempt to invoke virtual method 'int android.os.Parcel.dataSize()' on a null object reference
+a30ad7224c3 frameworks/base: reduce the setTransactions
+4466c442310 Fix system app can't uninstall apps silently
+0d26ec54f08 Fix memory leak in WifP2pManager
+1047a1fef27 Revert "Changes for upgrade to OkHttp 2.7.5"
+2e4e86cccb8 Fix carrier label not getting scaled properly
+a3d6ad1a5de hwui: Fix HWUI_COMPILE_FOR_PERF for non-arm
+3ca8ef6f58f StatusBar: Catch OOM caused by third-party icons
+33322ac41ea Aapt2: Fix png leak
+9efbccf5ce7 Fix the Wi-Fi wrong status when turning Wi-Fi on
+9d0f4c1b78a wifi: catch UnsupportedOperationException for getMatchingWifiConfig
+1999b469ec1 SettingsLib: wifi: Fixed AccessPoint tracking for Passpoint networks
+26b9aea5c0b Destroy Allocation with ScriptIntrinsicLut
+b94248ce527 Destroy Allocation right away on exception
+8b21f67e159 Do not CloseGuard KernelID or FieldID
+1cbf2034c5e Fix keyguard is black background while screen turning off/on quickly
+a89462f903a sensors: intern jstrings for memory savings
+5629682964d sensors: fix native crash when dynamic sensor is removed
+03c650ea5a8 The network event should be an asynchronous callback.
+4a662fc30f4 Clear mGuestRestrictions before loading from disk
+0ff8fdbd545 AssetAtlasService: fix multi-threaded computeBestConfiguration
+d207f4509cf Revert "Fix BaseBundle IllegalArgumentException"
+4379c3ca4be Revert "SystemUI: Fix QSTileHost exception"
+37a3e941612 Revert "core: Set the power menu volume selector as green"
+9f898f33a69 Revert "Do not stop while mCurrentClient is already in the process of stop."
+5d534a1471d Revert "send cancel cmd to hal in Lockout mode."
+30bf5787a8c Fix a NPE with outlineProvider="none"
+72e7c147691 Keyguard: Move CAF strings to cm_strings.xml.
+fefc5549ef1 Changes for upgrade to OkHttp 2.7.5
+9316c0a4ea0 MountService: Don't run benchmarks after trimming
+f98e16f8a3d ActivityStack index OOB cause device restart
+65976d27fcb Fix DateTimeView fc issue
+0ebd606352b fix KeyEvent can't correctly finish when inputmethod time out happend
+5ae0f56a946 uce: make status code precise
+a79a3c2cd7e Skip send broadcast to the receiver whoes user has not started.
+1c990a978bc TileAdapter: use colorPrimary for tile item decoration background
+ae758c1b8c3 SystemUI: Don't disable rotation tile
+ab6f2e87a26 fix NullPointerException in Notification.java
+31819187616 Need to resize new created stack to fullscreen after docked stack tasks has moved into it.
+1bcfa9f64db Complete cleanup broadcast receivers of target user
+b2e9e378dd6 modify the parameter in cleanupLocked
+6e2d7c2ff2d Fix a null pointer exception in FragmentManager
+26c8cad25ca hwui: skip draw empty frame
+8a6f4c6973d base: set scrolling to 0.006f
+3eb748bcedb Open /data/anr/traces.txt with O_APPEND.
+7f8960b71f2 Use theme accent color for the multiwindows divider
+ef3d401f3b1 Fix Aosp bug on custom apps tiles: color not changing on tile state change
+4a9d08dac6b Fix the notification issue shown on startForeground
+e4285bc5aaa UsageStats: App idle parole should be off when app idle disabled.
+d602cc91b82 Remove duplicate code for binder ID clear and restore.
+975f2ea9a26 jni: adapt to removal of property name size limit
+2069d8a8ae7 Fix NPE while performing NetworkStatsService.removeUidsLocked()
+94e414c7425 Fix race condition when writing UidState of appops.
+2c0c8ffee93 Frameworks/base: Fix old code in MediaPlayer
+ce579a76611 Bluetooth: Prioritize Bluetooth state change intent to start Service
+fd99e259a10 combo bug when location reported by providers do not come with extras
+6115179ac76 Fix potential NPE in application state
+213bb191752 Fix the reset of boosted zygote thread priority.
+c8d7cb3846f Skip ListPopupWindow position update if detached
+6e17b86537e java.lang.NullPointerException Attempt to get length of null array in FileRotator
+b42830c189f StrictJarFile: Handle multiple cert files correctly.
+7e30c7a4370 Add finally block to close the stream.
+203bd2034f7 fix system_server crash issue caused by fd leak.
+d395f71aa9a Framework: Ensure image heap string literals for Patterns
+b6e6568afea ExtShared build as priv-app
+afa31f5987a fix system server crash caused by CME in usage stats
+ab2d8daaa87 Don't start persist APP when it was disabled.
+2e610fdcbaf Fix issue that no multiuser UID_REMOVED received.
+2848695205f am: remove unnecessary check
+05a73ffa00d Partial Revert "Replace com.android.internal.util.Predicate with java.util.function.Predicate"
+dba0cfd702f Replace com.android.internal.util.Predicate with java.util.function.Predicate
+0f48adad5c5 Extra generic type information to aid certain javacs.
+3b4e640a96f Speed things up to the max
+211d2153ea3 Remove redundant lockscreen shown check
+71625c7d26a Turned ENABLE_CPUSETS into runtime decision.
+56a395035b3 Enable multidex for SystemUITests
+d2cf8740847 Define priority for callerinfo selection
+10c5c5b2673 Fix inconsistant display number format issue in Messaging application
+fd9afde0ead Handle NPE in TelephonyManager
+3d193660b66 Fix deprecated range_x calls.
+062c1de5553 Move hwui private headers to frameworks/base/libs/hwui/private
+2146a9ae2e6 hwui: Fix the length of partial updates system property
+4a27cf7b471 Fix and work around aliasing rule violations
+56bdd46fb49 Fix dead lock in Tethering state machine
+c065de8e6d7 Fix client holding in fingerprint removal
+79382b59f4f Skip task that has not real activities
+023b5708bcb with LockTaskMode violation, remove created TaskRecord
+6754d981758 Fixes the thread-safe issue.
+30be84c3380 Remove drawables we don't need
+584839ba304 revert some fastJni
+d763bfcc588 Prevent re-entrant watcher from causing exception.
+63d28b5e77c Better QS detail clip animation
+32f64ffa731 Icon does not disappear even though it is disabled in Launcher
+e73e9ce37d5 base: volume dialog: hide headers on all streams if requested
+7aa32ea8a23 Fix for reboot due to Volume State not updated in callback
+cfb266c142f Fix crash issue on Storage Manager app
+aee4b61bb4d SystemUI: update volume dialog when re-inflating views
+ee2d175be87 ActivateableNotificationView: re-inflate on configuration change
+ebdbd8011de Fixes can not boot issue.
+adebb4d9a19 DefaultPermissionGrantPolicy: Pass correct arguments
+33664866822 Fix stack-buffer-overflow detected by AddressSanitizer.
+31365ce8807 Prevent LocalSocket from creating an fd if fd is already there
+9e29bf81bbb systemservice will be restarted if force stopping android.print.cts running
+ed1251406fa LocalSocketImpl.cpp: Set O_CLOEXEC on received FDs
+33ea083eef3 AppOps: Avoid RuntimeException and log spam
+c3a95225ba2 ActivityManagerNative: Prevent possible soft-reboot
+d6ec3d77d3b send cancel cmd to hal in Lockout mode.
+a8632c54cd9 check whether the ActivityClientRecord of token is null when handleStopActivity
+0794ebc6469 schedule vsync immediately when requested from the Looper thread
+619ae7ce2a7 Fix moveTaskToBack: Activity below home were resumed instead of home
+727e7d3531b Prevent lost mTaskToReturnTo value for moving home
+1d044cfca33 Correct the sync lock for ManagedServices's mServices.
+d0aeb1d8efc Fix gear not showing when rotation or RTL changed
+7c54653c806 Immediately adjust hideSensitivity of Notifications
+e8ea387ca4d Fix issue when start android/com.android.internal.backup.LocalTransportService
+a8b7ae76c6c Skip guestToRemove users when PackageManager initializing user status.
+9ad0165736c Fix a use-of-uninitialized-value warning.
+a1dd40c73b8 OBEX : Handle Negative index Exception
+09cef7472d2 Add timeout for dumpNativeBacktraceToFile.
+22aff75dec4 AudioAttributes: setCapturePreset: Handle VOICE_*
+dc08ebe5541 synchronized gRecyclerLock to avoid InputEvent been change while dump
+d0f930598b5 Do not turn off voice interaction when close system dialogs reason is assist
+ea0501ce7dd Remove unused variable.
+708b6523080 Add make_unique function for jni
+00b8cf50115 Resolve deadlock between ActivityManagerService and PowerManagerService
+91ebed7f180 Fix BaseBundle IllegalArgumentException
+64d7c1e16c7 Fix memory-leak warnings from the static analyzer
+d40a8147d5b Disable touch slop for generated gesture events
+d20e11bf3d2 Fix a use-of-uninitialized-value warning.
+5c458dea42a DeadZone: add missing call to TypedArray.recycle()
+e2f2327b7ae Avoid deadlock when installing app
+fedf8b50db9 Save "mState.restored" in onSaveInstanceState of FilesActivity
+9dceb23462c Cleanup uses of sprintf so we can deprecate it.
+12f3f9d782b KernelWakelockReader: stop the panic
+078d1a74a07 ParcelFileDescriptor: can we stop the panic here?
+bd88457a264 Add support for MTP perceived device type property.
+6c935c4659f pinned stack should always be on-top of visible stacks
+abc5efc9ff4 unbindBackupAgent and initialize inFullBackup
+0bbd163212f Add -fno-strict-aliasing to compiler flags
+c175702fff7 Fix ListView can not be moved after rotation.
+550ccbf348a sysui: add missing string to volume panel
+eb6a3ceab41 Switch frameworks/base/core/jni from gcc to clang.
+9e7f2b15aca base: Add handling SQLiteDatabaseCorruptException
+aecb5f5034f Catch KeyStoreException for setting profile lock
+3968d2b29fe Prevent IndexOutOfBoundsException
+458d0920dcd frameworks: squash of leak & race fixes
+c4a508df336 fix OutOfBoundsException in DisplayContent.java
+5366b3e5fff Move service from starting list once onStartCommand get called
+893ca349f12 Handle IllegalArgumentException
+cf79983b798 Deadlock in PackageInstallerSession
+87b3e8793ae pm: do not verify system apps signatures
+236b23c47b0 Fix the bug in replacing a fragment with itself.
+8b6b947b2fe Replace usages of ShortNumberUtil with ShortNumberInfo
+949f0d9a0af Fix issue in PhoneNumberUtils.compareLoosely
+49580dbb54f Fix struct vs. class mismatch in forward definitions
+2594c8dbf9f Fix for google backup and restore
+f00e7ed4d2c Fix Photosphere/Camera FCs
+4158521f2b7 Fix race condition in setting notification panel height
+97f90580a8e Debug: Initialize local to false
+4fd959b731f Incorrect key object in EphemeralIntentResolver.filterResults
+efd9882e4db Fix wrong focused stack if there are finishing tasks.
+e14c2f91854 Fix warning: Potential leak of memory pointed to by 'set'
+4732f3ea831 Prevent some alarm pathologies
+ea3f1703441 Do not stop while mCurrentClient is already in the process of stop.
+1acf3d360aa Handle application crash in new thread.
+f17ca3b6141 clean up pending broadcast receviers when force stop package
+90fccca9564 fix service could not be started correctly when app.thread == null
+8935367785d We should notify the foreground activity changes immediately.
+4bc5c2c6c1f Clear pending activity launches when force stop package
+8ee8a535e8c Also remove activity record if its app is removed.
+4b2418061dd Do not kill attaching process when removing task.
+3b7f9aafc7a clean notification before delete the activity
+9c221948a06 Bring up Service if not schedule to restart
+3c2a8daba45 Fix the inconsistence between ProcessRecord and BroadcastQueues
+df1446d63f4 Fix illegal argument exception when take picture.
+227041eebf4 Fix type casting for broadcast delay with service
+8992a353df2 Remove freezing window to fix UI freezing issue
+62799d1cb5e Sometimes property service is slow to respond
+6f82dc1d143 Fix potential heap memory leakage.
+59aacc30ba5 Fixes the system server crash issue caused by uncatched exception.
+b2cabda2aa7 Fix CountDownTimer handler memory leak
+5390070c007 Fix race condition of job extras.
+a6b16354278 SharedStorageAgent: Fix onRestore
+9b1c61a979a Fix java crash under DhcpClient.java
+c4441ba85cd suppress the accessibility IllegalStateException
+84afdb6f229 Avoid ConcurrentModificationException in method dump
+7446a27c703 Checking mCurrentValue twice instead of mCurrentValues
+70da56dd9df Fix: Fix dlfree error when delet mZipInflater.
+fad0831ccae SystemUI: Reload the EndNowButton label
+10ff57a9e08 Use async thread for performPoll in NetworkStats
+c5cac70a0fc Rename the backup file to base file when backup exists.
+a999bb86003 Fix static analyzer warnings.
+1f860c4daf9 Relax namespace restriction on system server classloader
+8d63651bae8 missing includes
+ca08b230c5a SysUI: prevents crash caused by NetworkOverLimitActivity
+15a167f3402 Handle invalid pointerId
+8b065194cc0 Fix logic typo in the JobPackageTracker
+b17000deb1f Handle exception when mount service not ready.
+1af8733d1f2 Also block touches while customizer is animating.
+6c9aa6e326c note the last msg that might make the Looper blocking
+29f2202bddf Fix keyguard flash issue
+1178ce0ebca Prevent destroy surface during window replacement.
+494793596ef Avoid the system server hang forever.
+f9cf624d2f7 Avoid NPE when restarting task all activities of which will be cleared
+08e8620aeba Fix error java.lang.NullPointerException
+2feb86451c8 camera: catch NullPointerException for Nexus 5
+52254b9cb5f Fix NullPointerException in MediaPlayer
+e122da1a8a3 SystemUI: AssistManager: create mView if null
+de1b6fedc69 Fix pms systemReady NullpointerException
+4438a4f2dbc Fix the NullPointerException
+5f920393179 Fix NPE from AppOpsManager.checkPackage.
+4f74c0b2018 InputWrapper: opt out early if session == null
+51b517eb4f6 Fix potential NULL dereference errors.
+05c6a429d20 ANR related to split-screen
+654f1f079d0 Remove the unnecessary window animation request
+5b2048cdfa0 Fix a NPE when putting a null-Bundle in an Intent
+273f31872ec SettingsLib: java.lang.NullPointerException
+b21a82f2e10 Post noteProcessFinish() to handler thread
+bd7a3340c55 Fix NPE in NetdResponseCode.InterfaceClassActivity
+eb643b2f959 Checking null in NsdService
+00177a671c7 Fix NPE in BaseStatusbar in onListenerConnected
+8c8c30aa837 Fix NPE in TextUtils
+22fe89ac102 Handle NPE due to threading race
+effeebdf82c Fix NPE in updateEmptyShadeView() upon screen rotation
+5cd418c0676 Speed up the volume panel timeout
+d3917b53226 Fix possible NPE
+68dee9b4ce2 Delay move input method windows when exiting.
+39c85a9a104 sanitize niceName before doing wrap property lookup
+b92dcc0bda1 fix force stop home app may black screen.
+311e63e9565 Frequently used OpenGL ES methods whitelisted for fast JNI path
+19331ebbb2a core: Set the power menu volume selector as green
+47055cebdb3 Fix array exception in createAutoBrightnessSpline
+5028e4121c1 Adjust the minWidth and minHeight whenever there is change in density.
+19730cf1465 KeySetManagerService: prevent NPE
+ce9a13d920f DND tile: Longpress when active to show detail view
+261ee3b2658 Added missing @DrawableRes
+a0cd03ea20c Fix wrong peek height of the notification panel
+0e54a00f852 frameworks: ScrollView.SavedState toString fix
+bb60f2dd2d7 Show icon of package associated with Toast
+a28ed574a21 SystemUI: FIX No sim - airplane mode padding
+bd992e68051 Fix memory corruption caused by patchCache.clear
+3d23d25628b Fix right lockscreen shortcut icon resetting
+b2132c4755e ListPopupWindow: Correct a negative height before showing
+7a6df12a602 Remove duplicate uses-permission
+03bdb7cc119 Remove unsupported RS graphics API tests.
+1d30fc18e7d limit the input value for Math.acos to prevent returning NaN
+0d1c2ea471a Allow Python Versions Higher than 2.6
+2c892a138a5 Settings: Change defaults
+93118b42295 Toast long timeout fix
+14e52c10414 Notifications: Materialize missed calls icons
+bbfd9dd579a base: Change toast frames color to some better look ones
+54549a677cd Integer.valueOf() -> Integer.parseInt() to avoid allocation.
+35d1d4280de Avoid needless Integer.valueOf() object allocation.
+c9d7320165c base: Turn off some debugs
+b7d4d441213 aapt: Default to 0 compression ratio
+670bfadea95 Fix permissions for CTS [1/2]
+48e07cdd83a OMS: StrictMode and files under /data/system/theme/
+314035c9ff6 Add protected broadcast for app crash broadcast
+a6143a6bded Themes: Allow volume slider and thumb to work with custom images.
+b66c1a999ee Separate tile label color from icon drawable color
+b90ceaba946 Themes: Expose Keyboard Shortcuts Dialog
+dcf19088d86 Expose Screenshot flash and background colors
+33f94d2b79a Hold "volume up" during boot to disable all overlays
+02219f43858 Keyguard: disable logspilling debug
+7c3c3d8a161 base: location: silence log spilling
+7d7838a31b2 telephony: Hack GSM and LTE signal strength
+cecbcc4527c Increase text size for circle/landscape battery style
+0310a412ef4 base : Update default material popup animations
+3c8dfc454cb Improve scrolling cache
+12dd44194bb base: Speed things up
+2382b424857 Add "android.permission.READ_PHONE_STATE" to manifest
+dfcf3d3b6dd SystemUI: Protect com.android.systemui.doze.pulse
+9165d9b5abd base: Set animation scaling to 0.6
+123b4703232 Fix SuperSU related spam
+572bf0b9e8a Update screenshot notification icon
+c672a8cf03a 'Do not disturb' add 15 min Steps and up to 14 Hours
+14ccc78f8b3 Status bar: Update notification count icons
+90ef7d00585 Make PIN/password failed attempts dialog non-cancelable
+
+   * manifest/
+c8a2fcb Remove bullshits
+
+   * packages/apps/DeskClock/
+89aae760 DeskClock: Fix issues with flip/shake actions and poweroff alarm
+
+   * packages/apps/FlipFlap/
+0174b30 Circle/Rectangle Views: adjust icon spacing/sizing
+
+   * packages/apps/Settings/
+b223fad6d Merge remote-tracking branch 'los/cm-14.1' into nougat
+d0992f30b Vectorize viper logo
+c0d648579 Fix derps
+545f8f535 Update PT-BR Translations
+6630c383b Fix NPE of backlight settings [2/2]
+1797841e7 Fix crash while searching in Settings
+94ff7331a Fix apn can't be updated when pressing back key
+a3e88d290 Make headset icons consistent before / after pairing
+6f132af26 Clean up and fix deviceinfo
+
+   * packages/apps/VPapers/
+3939632 Fix pt-br translation
+f11fcc9 Bringup VPapers
+
+   * packages/apps/Venom/
+705c893 Merge branch 'nougat' of https://github.com/Viper0S/android_packages_apps_Venom into nougat
+6e01879 Fix derps
+e03b323 Update PT-BR translations
+
+   * vendor/viper/
+cc81f77e Remove exchange
+d623bd60 Gallery: new icon
+2e84a83f Little fixes
+cc756875 Fix codename device missing
+275e59f8 Change version
+9e452a4a Use Google Nexus Audio Files [3/3]
+02610f42 overlay: more round icons
+bbe6657e Missed substratum prop
+ce32f56a Disable livedisplay by default
+72b3406a Cleanup
+23c89603 Update Turbo.apk from 6p N2G47O
+9cf11b2a Remove magisk Revert "vendor: update MagiskManager.apk v4.3.3 and MagiskManager.zip v12.0"
+6b2db7be Remove some apps
+
+====================
+     05-22-2017
+====================
+
+
+   * build/
+0416aa987 Use Google Nexus Audio Files [2/3]
+03baba840 build: Remove vendor check
+1119a3e7d Don't pass empty arguments to ninja
+05777712c cout: move to $out
+396196fb8 build: Don't build tests
+8e67de061 edify: Fix _WordWrap function calls
+fe04d65d9 build: Remove annoying text when flashing
+3574c73d0 releasetools: Fix an equality check bug when asserting stash size.
+94ef0ad1e Use 'release-keys' for build tag
+0e2abe2bc Remove Feedback Directed Optimization support
+a2bd930c4 disable Dalvik lock contention logging as it isnt needed
+91fdb5e4d zipalign missing header
+2d9af15d0 Disable the after flash image verification
+f135e63c3 build: allow kernel to ALL_PREBUILT
+81072f841 build: Enable custom ccache cache dir for Android
+2fc88448e Merge remote-tracking branch 'los/cm-14.1' into wip
+c27d9fde2 Remove Magisk Revert "Magisk as default and define explict rootless method [1/2]"
+2507d6ac1 Nuke Email
+7d1990c83 Don't add these items
+
+   * frameworks/base/
+f4274a6ad5f Fix single action power menu issue
+c21f23d4e3c MTU should be 1358 as per 3GPP standards, especially for LTE radio interfaces.
+41c7dcb88ad fix wrong algorithm in getMobilePowerPerPacket()
+b99899b5d6a SystemUI: disable statusbar time refresh when screen off
+eff3e1d556c Keyguard: don't refresh ui when screen off
+6e3245db86c Revert "Some layout adjustments"
+449ea1aa332 Revert "base: lineage adb icon"
+
+   * frameworks/native/
+aa4f9391e Merge remote-tracking branch 'los/cm-14.1' into nougat
+
+   * kernel/lge/g3/
+391c72031c6 kernel: Fix potential refcount leak in su check
+
+   * kernel/oneplus/msm8996/
+0ad12ceafc9 ion: adjust system heap pool orders
+33b6f214efb ANDROID: mmc: move to a SCHED_FIFO thread
+33bd17dd611 sched: avoid migrating when softint on tgt cpu should be short
+4df8d3035a7 sched: avoid scheduling RT threads on cores currently handling softirqs
+4bc39cc8705 sched/rt: Avoid moving rt task if destination CPU does not run low priority task.
+57ce9787db3 lowmemorykiller: account for unevictable pages
+dd742f15b90 android: binder: remove useless preemption disable on target_wait
+4e6bb145a19 net/packet: fix overflow in check for tp_reserve
+0e0a89aa33a net/packet: fix overflow in check for tp_frame_nr
+3c1cc5cf0ac net/packet: fix overflow in check for priv area size
+a63bc81ee67 dccp/tcp: do not inherit mc_list from parent
+8f475aa9d11 ip6_gre: fix ip6gre_err() invalid reads
+f5dbfd246e6 tty: n_hdlc: get rid of racy n_hdlc.tbuf
+79a275b1558 TTY: n_hdlc, fix lockdep false positive
+
+   * manifest/
+68e3493 Fix
+83624b2 Stop tracking some repos
+ff6f533 Nuke SetupWizard
+841ffa7 Rename branch to 'nougat'
+bd4d0c0 Remove these shits
+
+   * packages/apps/Contacts/
+db4fee16b Merge remote-tracking branch 'los/cm-14.1' into nougat
+
+   * packages/apps/ContactsCommon/
+4458d2d5 Merge remote-tracking branch 'los/cm-14.1' into nougat
+
+   * packages/apps/Dialer/
+b5c02603a Merge remote-tracking branch 'los/cm-14.1' into nougat
+
+   * packages/apps/FlipFlap/
+04fc471 CircleView: always show clock
+
+   * packages/apps/Messaging/
+7a10eaa Merge pull request #1 from Andersonmendes2016/nougat
+f80d3b1 Add round icons
+
+   * packages/apps/PhoneCommon/
+cee274c Merge remote-tracking branch 'los/cm-14.1' into nougat
+
+   * packages/apps/Settings/
+01949283a Settings: display fstype for mounted volumes
+f8d7c37da Unify the DatePicker Dialog and MIN_DATE
+a3a1a7586 Fix the memory leak in DrawOverlayDetails
+37f379a8a Improve Wi-Fi Settings UI in guest mode
+cb9a9e9f2 Show USB Mode Dialog
+a9da51a6a Settings: avoid a NullPointerException in security
+987f56ddd ChooseLockGeneric: fix crash
+627cb71c0 Settings : Rebuild app list after reset
+25299b9fd android beam: Make the summary string up-to-date
+384ac9c69 Get rid of framework holo actionbar buttons
+b5400af6b Settings: disable the other learn more too to prevent crash
+9697c044d Settings: Animate pin/pattern fragment only if available
+5ec71e4f8 Settings: background not set in main Settings screen
+6d1092add Title is different after tapping "Memory used by apps"
+7cc9e29f1 Settings: Tint Black Drawables
+41fb6daab Settings: Wi-Fi WPS Materialized icon
+64fe7b327 bluetooth: Show a refresh icon on the select devices screen
+03a9f03cc location: Enable 3dot menu
+00c6b7af0 Open app when clicking on icon in App Info screen
+ad8423de5 Fix memory leak in Bluetooth settings
+5ee6a167c Settings: Fix cannot search paired BT device issue.
+f0bceb63c Fix crash when rotating HighPowerDetail dialog
+1c982fcbe Fix NPE when rotating "Saved networks" screen
+ed7d9728f Fix NPE in SettingsPreferenceFragment
+65c2a8def Fix InstantiationException when rotating Notification access settings
+8c4abbdda Settings: Disable OTA and remove demo mode
+049bcd3b5 Fix two same BT devices are shown
+e9a8ce2bb Add fastscroll to the Manage applications screen
+88e7621d7 Always show screen on time
+a14005a38 Settings: Use seekbar to allow setting arbitrary animation values
+a87f49128 Fix null point exception in WriteSettingsDetails
+06cfdc655 Optimized Code: call direct method to get integer extra
+a8dc70aad Optimize code on get UidDetail in AppDataUsage
+5fe112d6d Bluetooth: leave screen off for permission request
+28d212e5b RejectedExecutionException in DataUsageLIst
+21728f42d Settings: Fix wrong wifi drawable in screen zooming preview
+bf5a2e335 Redundant waiting time of keyguard unlocking after reboot
+45e4c038e Show search results when query string contains trailing space
+34e997236 Correct fingerprint position during setup
+4d714c0b4 Fix synchronization of Wi-Fi hotspot switch
+820f10c8a PowerUsageFeatureProviderImpl: little cleanup
+cc5123a8c Update PT-BR translations
+1efaa5bf6 Remove SupportManager
+
+   * packages/apps/Venom/
+8deb711 Merge branch 'nougat' of https://github.com/Viper0S/android_packages_apps_Venom into nougat
+4e76a4a Venom: Update button backlight brightness in real time
+8c14f51 Fix NPE of backlight settings [1/2]
+7bc86dd Merge pull request #1 from Andersonmendes2016/nougat
+ea71d03 UP PT-BR translations
+5699f6a Remove useless text in viper_devices
+83a74a4 Add kenzo and harpia
+
+   * packages/services/OmniJaws/
+e620636 Update PT-BR translations
+ed487c6 OmniJaws: add pinWheel directions for wind
+e926a63 WindSpeed: allow to translate
+ce4a692 Add strings for lock screen weather
+
+   * packages/services/Telephony/
+adbc4fb1 Merge remote-tracking branch 'los/cm-14.1' into nougat
+
+   * system/core/
+2b1c3f79d Add flag to prevent /charger symlink Signed-off-by: jhenrique09 <jhenrique09.mcz@hotmail.com>
+8375ab938 Lockscreen charging info: real time values [2/4]
+e9c386ad2 Merge remote-tracking branch 'los/cm-14.1' into nougat
+
+   * system/sepolicy/
+cb46f96 system_app.te: Give permissions for using sdcardfs
+697e76c Add policy to SELinux to allow ViPER4Android in enforcing mode
+b652e45 sepolicy: Allow platform_app to run su_exec() (1/2)
+db4cb6c sepolicy: Allow system_server to run su_exec() (1/2)
+8abd1b0 sepolicy: Allow system_app to run su_exec()
+937171d sepolicy: Allow remount /system
+b006104 sepolicy: add file and domain trans to interfacer
+660bc30 sepolicy: Allow system_server to set theme_prop
+
+   * vendor/ViperOTA/
+68c763c Update viper_osprey.xml
+532d8b7 Update viper_osprey.xml
+
+   * vendor/viper/
+f19b4b17 vendor: Allow platform_app to run su_exec() (2/2)
+a0336520 vendor: Allow system_server to run su_exec() (2/2)
+93ebb419 vendor: sepolicy: Allow system_app to run su_exec()
+2d913fd5 Remove su
+d650c498 roomservice: Change default branch to nougat
+91778df3 Introduce viper.devices and cleanup
+448e224c [SQUASHED] New roomservice roomservice delivers you lunch combos from the SlimRoms github.
+b5324fc1 extract_utils: fix extracting XML files containing binary characters
+86b4e3c5 Nuke Lineage SetupWizard
+
+====================
+     05-21-2017
+====================
+
+
+   * device/oneplus/oneplus3/
+175fdb4 init.qcom.rc : Add time_daemon in init.qcom.rc
+8bf1494 op3: rootdir: Update fs tune from marlin
+7e8fa2b op3: Use kryo 32-bit routines
+079e43f op3: Set camera package name to OnePlus Camera
+46b7928 op3: Add specific camera parameter library
+d498608 op3: Remove camera shim library
+baae4eb op3: Update to OB16 blobs
+2b544b7 op3: Re-enable camera HAL3
+774d8eb op3: Disable tethering provisioning for all carriers
+
+   * device/qcom/sepolicy/
+50c1e23 this viper no cm thanks Andersonmendes
+
+   * kernel/oneplus/msm8996/
+178808f06e8 Merge commit '396a2965850160ca5427239d9af56ec42fe4774f' into HEAD
+516fd6194d6 op3: Set cfq as default I/O scheduler
+e6fda3c19d3 kernel: Fix potential refcount leak in su check
+b0856c3bd6c kernel: Only expose su when daemon is running
+
+   * packages/apps/Venom/
+8fa06e2 Add Anderson Mendes new maintainer
+
+   * vendor/ViperOTA/
+bddc269 Update viper_osprey.xml
+9434625 Update viper_osprey.xml
+26e52ab Update viper_osprey.xml
+efdad6f test3
+6769515 test2
+25e807f test
+49340cc Initial Devices
+
+   * vendor/oneplus/
+602b6ed op3: Update to OB16 blobs
+
+====================
+     05-20-2017
+====================
+
+
+   * manifest/
+597240c track our themeinterfacer
+515a073 added Flash ROM remote to our manifest
+0b59988 Merge pull request #2 from RMarchetto96/n-mr1
+7f296e6 remove all CMTE shits
+05c6095 Remove "interfacer" and track latest "Theme Interfacer" from Flash ROM GitHub
+
+   * packages/apps/Dialer/
+77b414754 Dialer: lock screen appear before incoming call screen
+
+   * packages/apps/Jelly/
+96e4243 Automatic translation import
+7c65684 Jelly: EditTextExt: Remove shader before drawing
+0a0fcbd Jelly: Don't reload webview on screen rotation
+
+   * packages/apps/Venom/
+b02a30a Add Bruno Dantas new maintainer
+
+   * packages/apps/ViperOTA/
+83efa7c6 Update README.md
+b7d5d2d7 Use ro.ota.build.date instead of ro.build.date.utc
+
+   * packages/services/ThemeInterfacer/
+5aeba49 Add interface to get API version and app authentication status
+069e629 Fix permissions for CTS [2/2]
+
+   * vendor/lge/
+a98b8094 v410/v4xx: regen blobs
+
+   * vendor/viper/
+aca5c9a4 Add new bootanimation
+
+====================
+     05-19-2017
+====================
+
+
+   * device/oppo/common/
+2616068 Automatic translation import
+
+   * frameworks/base/
+f7786420a2d Automatic translation import
+
+   * hardware/qcom/fm/
+68e8f7d Automatic translation import
+
+   * kernel/lge/g3/
+791d82d2d9b dccp/tcp: do not inherit mc_list from parent
+
+   * manifest/
+596bcab Merge pull request #1 from RMarchetto96/n-mr1
+bf0236b don't track hexolibre theme, It's deprecated CMTE
+
+   * packages/apps/Camera2/
+206a9cd11 Automatic translation import
+
+   * packages/apps/CellBroadcastReceiver/
+45cead5 Automatic translation import
+
+   * packages/apps/Contacts/
+00c1cbed6 Automatic translation import
+
+   * packages/apps/ContactsCommon/
+34fd53cb Automatic translation import
+
+   * packages/apps/CustomTiles/
+39b0e6d Automatic translation import
+
+   * packages/apps/Dialer/
+11b92979b Automatic translation import
+
+   * packages/apps/FMRadio/
+5704c07 Automatic translation import
+
+   * packages/apps/FlipFlap/
+f37f3e5 Automatic translation import
+
+   * packages/apps/PhoneCommon/
+116dd81 Automatic translation import
+
+   * packages/apps/Settings/
+18fd53aba Automatic translation import
+
+   * packages/apps/Snap/
+48e6c6d48 Automatic translation import
+
+   * packages/apps/TvSettings/
+dcc5072a Automatic translation import
+
+   * packages/apps/UnifiedEmail/
+226fafcae Automatic translation import
+
+   * packages/apps/Venom/
+d637075 Add EsromG5 new maintainer
+afd0ac0 Fix
+5858632 Add Rkschunk new maintainer
+b9a09cc RIP redmi2
+4d226a5 Welcome Carlos Arriaga new maintainer
+33e957f Unify with OP3T
+2dd1103 Add OnePlus 3T Device maintainer
+2b289e7 Fix seekbar attribute grabbing
+c7d2888 New devices and maintainers
+f17ac6a Fix and new device
+b0b6198 Add mainteiner for Moto G Falcon
+1c6e848 Revamp Network Traffic
+4f19cc1 New image of the network traffic meter icon
+9d64c26 Network Traffic [2/2]
+afe67cd Revamp UI
+901d09e Add option to disable auto brightness icon in brightness slider [2/2]
+4fc263b Add Viper About, Changelog, Maintainers (2/3)
+861fbca Battery tile: allow to disable custom battery style [2/2]
+eb2bdee Move Light/Dark to the venom [2/2]
+7aca576 Fix Derps
+414053c Lockscreen Weather squash:
+9186151 Custom Carrier Label & Carrier Label Placement and Color & Size [2/2] [Squashed]
+f1145cd Add Clear All Button to Recents [2/2]
+35c9b08 OmniJaws qs tile integration [3/3]
+b06a441 Add custom QS header images [2/2]
+524ade8 Custom QS rows/columns [2/2]
+61a3761 Custom small QS tiles [2/2]
+5f3129e Add new battery styles
+e1e3550 Venom: Add charging sounds settings [1/3]
+ac5bb09 [2/3] CMParts: single hand for hardware keys
+341c6d5 [1/2] Allow navigation bar home actions to be configurable
+8c6145a Fix derps and Reorganize
+42a57eb Pixel Navbar animation toggle [2/2]
+2e8743a Venom: Bring in CMParts resource
+b3419bb Added modded marginov color picker
+4321b70 Venom: Add CustomSeekBarPreference
+fc7783f Welcome to Venom
+
+   * packages/apps/ViperOTA/
+7ee2be0c Fix translations
+
+   * packages/resources/devicesettings/
+bd3c549 Automatic translation import
+
+   * packages/services/Telephony/
+13c66d45 Automatic translation import
+
+   * vendor/cmsdk/
+a4df9e2 Automatic translation import
+

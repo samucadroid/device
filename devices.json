@@ -1,6 +1,14 @@
 [
    {
-      "name":"Moto G",
+      "name":"Moto G 2013",
+      "brand":"Motorola",
+      "codename":"falcon",
+      "afh_folder":"https://www.androidfilehost.com/?w=files&flid=182249",
+      "maintainer_name":"Marchetto96",
+      "xda_thread":""
+   },
+   {
+      "name":"Moto G 2013 LTE",
       "brand":"Motorola",
       "codename":"peregrine",
       "afh_folder":"https://www.androidfilehost.com/?w=files&flid=182843",
@@ -64,11 +72,27 @@
       "xda_thread":"https://forum.xda-developers.com/moto-z-play/development/rom-viperos-v1-0-moto-z-play-t3610097"
    },
    {
+      "name":"OnePlus 2",
+      "brand":"OnePlus",
+      "codename":"oneplus2",
+      "afh_folder":"https://www.androidfilehost.com/?w=files&flid=184528",
+      "maintainer_name":"Marchetto96",
+      "xda_thread":""
+   },
+   {
       "name": "3/3T",
       "brand": "OnePlus",
       "codename": "oneplus3",
       "afh_folder": "https://www.androidfilehost.com/?w=files&flid=179037",
       "maintainer_name": "Gustavo Campos (BIRDMan)",
       "xda_thread": ""
+   },
+   {
+      "name":"LG G3 Int",
+      "brand":"LG",
+      "codename":"d855",
+      "afh_folder":"https://www.androidfilehost.com/?w=files&flid=184522",
+      "maintainer_name":"Marchetto96",
+      "xda_thread":""
    }
 ]
