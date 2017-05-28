@@ -136,6 +136,14 @@
       "xda_thread":""
    },
    {
+      "name":"Redmi 3",
+      "brand":"Xiaomi",
+      "codename":"ido",
+      "afh_folder":"https://www.androidfilehost.com/?w=files&flid=182272",
+      "maintainer_name":"EsromG5",
+      "xda_thread":"https://forum.xda-developers.com/redmi-3/development/rom-viperos-redmi-3-t3610713"
+   },
+   {
       "name":"Redmi Note 3 Pro",
       "brand":"Xiaomi",
       "codename":"kenzo",
@@ -150,6 +158,14 @@
       "afh_folder":"https://www.androidfilehost.com/?w=files&flid=184662",
       "maintainer_name":"Matheus Fernandes (matheeusaf)",
       "xda_thread":""
+   },
+   {
+      "name":"Galaxy J5",
+      "brand":"Samsung",
+      "codename":"j5ltexx",
+      "afh_folder":"https://www.androidfilehost.com/?w=files&flid=182267",
+      "maintainer_name":"EsromG5",
+      "xda_thread":"https://forum.xda-developers.com/galaxy-j5/development/rom-viperos-galaxy-j5-2015-t3610145"
    },
    {
       "name":"Vibe K5",
