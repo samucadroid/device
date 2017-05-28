@@ -1,5 +1,13 @@
 [
    {
+      "name":"Moto E",
+      "brand":"Motorola",
+      "codename":"condor",
+      "afh_folder":"https://www.androidfilehost.com/?w=files&flid=182452",
+      "maintainer_name":"Anderson Mendes",
+      "xda_thread":""
+   },
+   {
       "name":"Moto G 2013",
       "brand":"Motorola",
       "codename":"falcon",
@@ -54,6 +62,14 @@
       "afh_folder":"https://www.androidfilehost.com/?w=files&flid=182253",
       "maintainer_name":"Rkschunk",
       "xda_thread":"https://forum.xda-developers.com/g5-plus/development/rom-viperos-v1-0-moto-g5-plus-t3609902"
+   },
+   {
+      "name":"Moto X 2014",
+      "brand":"Motorola",
+      "codename":"victara",
+      "afh_folder":"https://www.androidfilehost.com/?w=files&flid=179034",
+      "maintainer_name":"Anderson Mendes",
+      "xda_thread":""
    },
    {
       "name":"Moto Z",
