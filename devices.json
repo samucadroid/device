@@ -31,6 +31,14 @@
       "maintainer_name":"JBCDroid",
       "xda_thread":"https://forum.xda-developers.com/2015-moto-g/development/rom-viperos-v1-0-moto-g-2015-t3610138"
    },
+      {
+      "name":"Moto G4 Plus",
+      "brand":"Motorola",
+      "codename":"athene",
+      "afh_folder":"https://www.androidfilehost.com/?w=files&flid=182258",
+      "maintainer_name":"brunobdantas",
+      "xda_thread":"https://forum.xda-developers.com/moto-g4-plus/development/rom-viperos-t3609855"
+   },
    {
       "name":"Moto G5 Plus",
       "brand":"Motorola",
