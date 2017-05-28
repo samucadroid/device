@@ -72,6 +72,14 @@
       "xda_thread":"https://forum.xda-developers.com/g5-plus/development/rom-viperos-v1-0-moto-g5-plus-t3609902"
    },
    {
+      "name":"Moto X Style",
+      "brand":"Motorola",
+      "codename":"clark",
+      "afh_folder":"https://www.androidfilehost.com/?w=files&flid=179041",
+      "maintainer_name":"Gustavo Campos (BIRDMan)",
+      "xda_thread":""
+   },
+   {
       "name":"Moto X 2014",
       "brand":"Motorola",
       "codename":"victara",
