@@ -1,11 +1,19 @@
 [
    {
-      "name":"Moto G 2015",
+      "name":"Moto G",
       "brand":"Motorola",
-      "codename":"osprey",
-      "afh_folder":"https://www.androidfilehost.com/?w=files&flid=179031",
-      "maintainer_name":"JBCDroid",
-      "xda_thread":"https://forum.xda-developers.com/2015-moto-g/development/rom-viperos-v1-0-moto-g-2015-t3610138"
+      "codename":"peregrine",
+      "afh_folder":"https://www.androidfilehost.com/?w=files&flid=182843",
+      "maintainer_name":"Rkschunk",
+      "xda_thread":""
+   },
+   {
+      "name":"Moto G 2014",
+      "brand":"Motorola",
+      "codename":"titan",
+      "afh_folder":"https://www.androidfilehost.com/?w=files&flid=182241",
+      "maintainer_name":"Renan Queiroz",
+      "xda_thread":"https://forum.xda-developers.com/moto-g-2014/development/rom-viperos-v1-0-t3612276"
    },
    {
       "name":"Moto G 2014 LTE",
@@ -16,12 +24,28 @@
       "xda_thread":"https://forum.xda-developers.com/moto-g-lte/development/rom-viperos-v1-0-moto-g-2014-lte-t3609920"
    },
    {
-      "name":"Moto G 2014",
+      "name":"Moto G 2015",
       "brand":"Motorola",
-      "codename":"titan",
-      "afh_folder":"https://www.androidfilehost.com/?w=files&flid=182241",
-      "maintainer_name":"Renan Queiroz",
-      "xda_thread":"https://forum.xda-developers.com/moto-g-2014/development/rom-viperos-v1-0-t3612276"
+      "codename":"osprey",
+      "afh_folder":"https://www.androidfilehost.com/?w=files&flid=179031",
+      "maintainer_name":"JBCDroid",
+      "xda_thread":"https://forum.xda-developers.com/2015-moto-g/development/rom-viperos-v1-0-moto-g-2015-t3610138"
+   },
+   {
+      "name":"Moto G5 Plus",
+      "brand":"Motorola",
+      "codename":"potter",
+      "afh_folder":"https://www.androidfilehost.com/?w=files&flid=182253",
+      "maintainer_name":"Rkschunk",
+      "xda_thread":"https://forum.xda-developers.com/g5-plus/development/rom-viperos-v1-0-moto-g5-plus-t3609902"
+   },
+   {
+      "name":"Moto Z",
+      "brand":"Motorola",
+      "codename":"griffin",
+      "afh_folder":"https://www.androidfilehost.com/?w=files&flid=182261",
+      "maintainer_name":"Rkschunk",
+      "xda_thread":"https://forum.xda-developers.com/moto-z/development/rom-viperos-v1-0-moto-z-t3609909"
    },
    {
       "name":"Moto Z Play",
