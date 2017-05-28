@@ -94,5 +94,37 @@
       "afh_folder":"https://www.androidfilehost.com/?w=files&flid=184522",
       "maintainer_name":"Marchetto96",
       "xda_thread":""
+   },
+   {
+      "name":"Moto G Play",
+      "brand":"Motorola",
+      "codename":"harpia",
+      "afh_folder":"https://www.androidfilehost.com/?w=files&flid=182499",
+      "maintainer_name":"Henrique Silva (jhenrique09)",
+      "xda_thread":""
+   },
+   {
+      "name":"Redmi Note 3 Pro",
+      "brand":"Xiaomi",
+      "codename":"kenzo",
+      "afh_folder":"https://www.androidfilehost.com/?w=files&flid=184664",
+      "maintainer_name":"Henrique Silva (jhenrique09)",
+      "xda_thread":""
+   },
+   {
+      "name":"Redmi Note 4/4X",
+      "brand":"Xiaomi",
+      "codename":"mido",
+      "afh_folder":"https://www.androidfilehost.com/?w=files&flid=184662",
+      "maintainer_name":"Matheus Fernandes (matheeusaf)",
+      "xda_thread":""
+   },
+   {
+      "name":"Vibe K5",
+      "brand":"Lenovo",
+      "codename":"A6020",
+      "afh_folder":"https://www.androidfilehost.com/?w=files&flid=184667",
+      "maintainer_name":"Júlio Cezar (bluereptile)",
+      "xda_thread":""
    }
 ]

@@ -1,0 +1,1728 @@
+====================
+     05-27-2017
+====================
+
+
+   * build/
+5b8480a Revert "Just Team"
+
+   * frameworks/base/
+4b9f1ee Fix derps
+2c2ddc1 STATUS_BAR_CUSTOM_HEADER_SHADOW: Fix observer
+db9e7bf NetworkTraffic: Dont show wrong values when connected to VPN
+39ad53a Lockscreen PIN quick unlock [1/2]
+240a8ca DocumentsUI: Change primary dark color
+64e7e38  Show 4G intead of LTE switch[1/2]
+e10f22c tuner: Remove clock pref
+ad34726 base: Clean up systemUI tuner
+794a908 base: notifications: DEFAULT_LIGHTS and FLAG_SHOW_LIGHTS must count as noisy
+44404e1 Frameworks AppOps: Enable MODE_IGNORED for OP_WAKE_LOCK
+3013bf5 CaptivePortal: login activity UI improvements
+0d1facc Fix an apk icon animation corruption issue
+c500fce Fix crash by IllegalStateException in sendAccessibilityEvent
+f75a466 Daynight: Fix font size
+a611c8a FWB:Add a Switch to Enable Disable Dyanamic Navbar[1/2] Everything works as it should. To see changes within the app after enabling/disabling this switch, app must be restarted everytime switch is toggled .
+2421683 SystemUI: Misc fixes for right (custom) lockscreen shortcuts
+902825a base: enable power save config of system apps [1/2]
+8a266f6 use FgThread.class instead of UiThread.class for lock object
+e8d7a5d Timeout should not include sleep time.
+d43d6c9 Fixes sharedUserId change issue.
+a4d641b an extra animation when finish a visible paused activity
+d538e6b Fix a crashed when clicking list item and button meanwhile
+535a12e Make BluetoothStateChangeCallback oneway to prevent waiting on response.
+b2a4c10 skip schedule broadcast and startservice if the user is stopped
+86071d8 Fix derps
+2330c17 Revert "Left handed navbar during landscape mode"
+
+   * manifest/
+0cc4359 Remove more shits
+6d592a5 Track VPapers
+
+   * packages/apps/CMParts/
+75bf9c1 CMParts: Strip weather service
+73d1d36 CMParts: remove extra padding from app light preference
+
+   * packages/apps/Jelly/
+576d1b9 Jelly: Make download_message not specific to sdcard
+
+   * packages/apps/Settings/
+343c049 Lockscreen PIN quick unlock [2/2]
+cc2d87a Settings: Add back demo mode
+e944984 Settings: Remove unused weather stubs
+e2b457b Remove OTA preference if build isn't official or app isn't installed
+c40d226 Display a summary related to automatic brightness only if relevant for this device
+23fed6f ConditionManager: don't crash when trying to add unexpected condition
+70791f0 Settings: PreviewPagerAdapter: copy the full theme
+200a02b Fix time does not change after rotating device
+9affd90 Settings: enable power save config of system apps [2/2]
+
+   * packages/apps/VPapers/
+7b8effb Merge pull request #2 from Andersonmendes2016/nougat
+34f566b VPapers: some fixes
+
+   * packages/apps/Venom/
+29b4e36 Show 4G instead of LTE Switch [2/2]
+d1d1cb0 Settings:Add a Switch to Enable Disable Dyanamic Navbar[2/2]
+cadba09 Restart SystemUI on toggle navigation bar visibility
+018ee45 Update PT-BR translations
+955e424 HW Keys backlight: Adjustments
+f1f7a66 Updates
+
+   * packages/apps/ViperOTA/
+4c088c0 Update theme
+a76a485 Implement android_version variable
+
+   * system/sepolicy/
+3b9c74b sepolicy: Allow priv_app to run su_exec()
+
+   * vendor/viper/
+3d53a6c crdroid: Disable weather provider
+e87af58 Change OTA url and add ro.viper.buildtype prop
+c3dc37d Viper v1.1
+252b4cb Build VPapers
+
+====================
+     05-26-2017
+====================
+
+
+   * build/
+8379b26 Clean option: deviceclean
+
+   * device/xiaomi/mido/
+b05e7a9 mido: Clean out cam blobs
+961c008 mido: Add cmhw services
+f7be00d mido: Enable f2fs
+f76b269 mido: Use WLAN driver built into kernel
+71376d4 mido: Drop prebuilt kernel  \o/
+c1bb5a9 mido: Pin SDM Blobs
+
+   * frameworks/base/
+6172de3 DayNight: Change derp again
+54c451d Revert "Scroll: modified velocitytracker"
+5f2db62 Base: Navigation bar options (1/2)     -Height and width
+ea80f70 input: support dynamic navigation bar toggling
+1cb88d4 Fix build
+6fbf256 Revert "Runtime toggle of navbar"
+039c457 update navbar icons and pixel c dimensions     *navbar icons from pixel c, pixel, pixel xl     *we still need some more icons made for the other dpis     *add pixel c opa dimens
+
+   * kernel/xiaomi/msm8953/
+98201e6 msm: qpnp-haptic: Process haptics asynchronously
+1c7c8c3 qpnp-haptic: Dejank the haptics
+5923f1e msm: qpnp-haptic: set up sysfs interface for common cmhw implementation
+6485151 qpnp-haptic: Add sysfs interface to control intensity
+
+   * manifest/
+9186ed5 Track FMRadio LineageOS -> ViperOS
+5435fc4 manifest: Rename to ViperOS-Devices
+
+   * packages/apps/FMRadio/
+2c2520d FMRadio: Add overlay to enable/disable FM without Headphone
+e9fcff3 Use FMRadio without wired headset/headphones
+
+   * packages/apps/Jelly/
+8f1365c Jelly: Handle screenLayout changes
+
+   * packages/apps/PackageInstaller/
+4e7827f DayNight theme
+
+   * packages/apps/Settings/
+dfd5865 Squash commit of SAR and IC Code.
+8d40866 Fix crash when calling remove() with a null variable
+35a7b17 do not include saved network in scan list
+3bb0d02 Revert "Implement device gestures and doze settings in Gestures section"
+dd3ea2e Revert "Fix derps"
+
+   * packages/apps/VPapers/
+74cad02 Merge pull request #1 from Andersonmendes2016/nougat
+7ffed4f VPapers: Add Wallpapers
+bea1891 VPapers: remove SolidColor
+
+   * packages/apps/Venom/
+91dc67f Don't show button backlight as enabled when hwkeys is disabled
+bc74469 Navbar dimension: Remove 0dp
+e271cfc Settings: Navigation bar options (2/2) -Height and width
+1e7ae96 HW keys tweaks (2/2)
+a899b82 Navigation bar enable/disable
+a08ed46 CustomSeekBar: fix progressbar glitch with custom min-max values when CustomSeekBar is called, it does: mSeekBar.setMax(mMax - mMin); assuming mMin=0 and mMax=100 if they are not set with settings:min or max through the related menu xml. So if we set one of those values in the related menu java class with the available public voids (setMax(value) and setMin(value)) the seekbar doesn't get the new min and max thus the user can't slide it to the max position.
+e6fbaa9 Move navbar to button settings
+6ee04c4 Move Ability to hide superuser status bar icon for misc
+
+   * packages/apps/ViperOTA/
+7f44d31 Rename Viper to ViperOS
+d725650 Automatic translation import
+76d4f48 Replace generic logo with back button
+
+   * packages/services/Telephony/
+f5fc7f4 Merge remote-tracking branch 'los/cm-14.1' into nougat
+9d67fca Fix minor inconsistency in the CDMA call settings
+
+   * vendor/viper/
+8d3f53d overlay: Enable Wi-Fi by default on first boot
+4b6dee1 Show full alarm info
+c7026f9 Go away mint, nobody likes you
+6842a31 Change accent color for AOSP keyboard
+8bfcbf5 roomservice: Rename to ViperOS-Devices
+29117cd OTA: Add missing prop
+79d9aec Merge branch 'nougat' of https://github.com/ViperOS-Project/android_vendor_viper into nougat
+cf58922 roomservice: fix a weird error
+
+   * vendor/xiaomi/
+f11b108 mido: Remove Unused cam blobs
+
+====================
+     05-25-2017
+====================
+
+
+   * frameworks/base/
+51051c9 [Base] HW keys tweaks (1/2) PS: to enable this feature you need to set to true <bool name="config_hwKeysPref">true</bool> in device overlay. Of course this is for devices with hardware and capacitive keys ;)
+d20644b notifications: Change guts text color
+559d5a9 Net monitor: fix visual glitch on statusbar expand when autohide enabled
+f52a8f8 remove network coloring and make network meter play nice with dark mode
+7877107 Link traffic icon color to text color
+d96c8ec Bluetoothtile: Rectify and fix compilation
+44350e7 FWB: Ability to hide superuser status bar icon [1/2]
+ff8a3f8 NetworkTraffic: Hide when not connected to network
+28e944e Scroll: modified velocitytracker
+95bbba5 Add keylayout for Xbox One controller
+18a54c4 Make the allPendingIntents add operation thread-safe.
+436c886 ConnectivityService: safer locking
+293cd52 Added mapping files for DualShock3 and DualShock4
+49f9cff When monkey test, the object of mHost throws NullPointerException.
+cb927e8 Fix NPE when call stack.setLauncheTime.
+ef49982 fix incorrect context classloader initialization in system_server
+f6c7cf3 Ensure qs detail item isn't focusable
+1444c1e QS BluetoothTile proiritizes connected device
+f9e5af7 QSTiles: set disconnect callback in bluetooth details list adapter
+54b3811 Allow WiFi & Bluetooth tile details to scroll
+5471aad Allow themers to customize battery frame color on darkintensity
+301a479 Big battery circle: fix custom themes compatibility
+eb9acb5 Make the view more compact and show more entries per page
+ea7d467 sqlite query perf: try to avoid getCount()
+8d0b1a3 sqlite query perf: clean up in-flight statements on cursor close
+52a9db2 sqlite query perf: try to reuse in-flight statements
+a3afd53 sqlite query perf: better window selection in common case
+fdd8d8e Limit the number of start or bind service
+e6cb71a Do not remove the alarm listener if it still need to be used
+e071a95 Fix the IndexOutOfBoundsException issue.
+dd323b3 Fix double free issue in ResTable.
+bd16070 Make sdcard volumes visible even when FBE is enabled
+b4b2e7a Consider allow-in-power-save-except-idle whitelist while updating rules.
+ba8242f system_server crash in ArrayMap.
+5af833c Format Japanese numbers using national format when in Japan.
+84a62f3 base: update updateUsbStateBroadcastIfNeeded types
+dce9a4c Check and send usb state broadcast when devices boots
+b72d072 Only send usb disconnect intents after boot.
+6d29276 Revert "SystemUI: attach a queue to media player notifications"
+04be5b8 More theme changes Thanks to @Adarsh-MR
+
+   * kernel/xiaomi/msm8953/
+83e40e1 drivers: input: touchscreen: Set set_cover_mode permission to 0220
+de5abad driver: input: fingerprint: undef goodix debug
+6decabb drivers: input: Stop ft5435 spam
+2ad163e mm: swap_ratio: Only call trace_printk() in debug
+bfc5826 removing msm calls to trace_printk
+ecea9a4 arch: dtsi: Increase max led brightness
+
+   * packages/apps/Settings/
+617c60b Avoid FC when entering Accessibility Settings with a font size of 100%
+c1bb31b DisplaySettings: font size in 5% steps from 80% to 130%
+83bbfce OTA: Update activity name
+
+   * packages/apps/VPapers/
+655225e fix build
+
+   * packages/apps/Venom/
+e5dd2ec Fix derp
+a430ae5 Ability to hide superuser status bar icon [2/2]
+05d9372 DarkMode: remove automatic
+
+   * packages/apps/ViperOTA/
+3a19116 ViperOTA Bringup
+
+   * packages/services/OmniJaws/
+27b1c1a Change api key
+
+   * packages/services/Telephony/
+cfc6174 Merge remote-tracking branch 'los/cm-14.1' into nougat
+
+   * vendor/viper/
+dd94ac2 OTA: Adjust and build only in official
+
+====================
+     05-24-2017
+====================
+
+
+   * frameworks/base/
+d69ed16 Fix settings header alignment
+
+   * manifest/
+72093bb I have TOC
+1f4d8c1 Track prebuilts/build-tools
+
+   * packages/apps/CMParts/
+81865db Automatic translation import
+b3a4827 Fix theming
+
+   * packages/apps/Email/
+c0e5d54 Search in folder specified via URI parameter, if possible.
+
+   * packages/apps/Jelly/
+c9f336c Jelly: Pause WebView along with the activity
+c23c013 Jelly: Don't claim to be a simple WebView
+c218521 Jelly: Define base class for Activities containing WebViewExt
+1607c0d Jelly: Make it easier to initiate gestures
+978e74e Jelly: Don't leak fileoutputstream if bm is null
+
+   * packages/apps/OmniStyle/
+4cf364f Update PT-BR translations
+43c9e10 add Team ViperOS headers
+
+   * packages/apps/Settings/
+f1684ad Fix derps
+eae5c9a Implement device gestures and doze settings in Gestures section
+1d10628 Fix suggestion background color
+
+   * packages/apps/UnifiedEmail/
+5462df5 Pass selected folder to message search.
+
+   * packages/apps/Venom/
+9a94211 Updates
+
+   * vendor/viper/
+8c69082 Build Gallery2
+c47941d backuptool: Fix for 7.1
+6509b8b Add substratum Also remove Jelly
+
+====================
+     05-23-2017
+====================
+
+
+   * build/
+880c524 Drop deprecated stuff/move stuff to vendor/device (squashed)
+416aa35 Convert -j to a reasonable parallelism for kati
+a8f9d7f Remove bootclasspath handling for Jack
+341ddb8 Remove static libraries from Jack classpath
+8fb9568 Use ASAN prebuilts if SANITIZE_HOST includes address
+f43c5f2 Use more prebuilt build-tools
+157d7c2 Update prebuilt build tools path
+ae4f6cb Prevent Kati from seeing MAKEFLAGS
+f35fff5 Ccache configuration improvements
+6cc8f3e Switch back to mksh as the default
+1377675 Don't prune $(OUT_DIR) from findleaves.py
+f1019b9 Propagate signals through makeparallel
+039b461 exec makeparallel
+f5f9e1e Revert "Remove -d keepdepfile from ninja command line"
+6816183 Update combined build.ninja to depend on Soong's build.ninja
+2185df8 Kill some log spam
+a608d54 Add root support for Tasker when using Magisk SU
+af2a6b1 Remove more apps
+a900d7d Use release-keys here too
+24fd3e6 Fix changelog filename
+
+   * frameworks/base/
+7e8b015 Add INTENT_RESTART_SYSTEMUI action Idea taken from https://github.com/DirtyUnicorns/android_external_DUtils/blob/n7x/src/com/android/internal/utils/du/DUSystemReceiver.java
+6bd6e62 Base: API to restart SystemUI without root Change-Id: I4ce4762bee82d40daf49bacc846786bc9a3d938f Signed-off-by: Corey Edwards <ensabahnur16@gmail.com> Signed-off-by: Varun Date <date.varun123@gmail.com>
+4df7ae4 Rename SettingsDrawerActivity header logo Conflicting with https://github.com/ViperOS-Project/android_packages_apps_Settings/commit/d0992f30b50789f963bd3fc499940e3e5cea4b69
+580e51f Correct slider position
+d85df2a Fix Some layout adjustments
+c561799 Update Settings drawer header logo
+79fd31f Use Google Nexus Audio Files [1/3]
+f8b9718 Theme changes
+e80aae2 Revert "Revert "Some layout adjustments""
+f93db60 QSPanel: Fix missing setting after merge derp
+07491c2 SystemUI: Do not use LOS auto brightness implementation
+8eb99dd Fix lag when opening an entry from the Settings left drawer
+ee95b3f Add SettingsDrawerActivity header
+
+   * kernel/xiaomi/msm8953/
+f4533ed drivers: input: touchscreen: ft5435: enable glove mode sysfs node
+b23c18f drivers: input: touchscreen: ist30xxc: Create shared procfs nodes
+04d6ebf drivers: input: touchscreen: ft5435_ts: Create shared procfs nodes
+0d203da mido: Enable f2fs
+2514f59 arch: arm: build device specific dtsi
+f0f24f8 mido: Disable modules support
+4c0afca mido: config enable MSM_PRESERVE_MEM and store reboot reason
+488222e drivers : usb: Increase charge current
+6f2f3d8 mido: Enable CONFIG_IP6_NF_MATCH_RPFILTER
+8bae23f drivers: staging: Import prima
+c87bb41 power: reset: Allow device to preserve memory on restart
+c016297 mido: Initial Lineage Defconfig
+3bee469 drivers: media: Import lirc driver
+ad785f0 arch: arm: boot: dts: update qcom,mdss-dsi-panel-timings tag
+dff0f98 drivers: soc: qcom: Add serial_num driver
+c3b29d1 fs: pstore: Import pstore Changes
+2fe4ea6 sound: soc: Import Sound changes
+ab61ce0 drivers: power: Import power changes
+4aa914e drivers: camera_v2: Import Camera changes
+c6ddc65 drivers: leds: leds-aw2013: fix compilation s/usleep/usleep_range/
+04c42fb drivers: input: fingerprint: Import Fingerprint Drivers
+ff7a78b drivers: input: touchscreen: Add ft5346 and ist3038c drivers
+da39b5f arm: dtsi: Import dtsi files
+4fdabf1 Revert "msm: camera: isp: Handle standby mode for B+M"
+c98f659 Revert "msm: isp: Add support for VFE resolution limit"
+
+   * manifest/
+cd2560f Update the Viper Github name
+
+   * packages/apps/Calendar/
+557bc2e Russian translations
+db3aebb Import Calendar Widget
+9a723c9 Hungarian translation
+d900609 French Translations
+
+   * packages/apps/DeskClock/
+89aae76 DeskClock: Fix issues with flip/shake actions and poweroff alarm
+
+   * packages/apps/Gallery2/
+e41621f Hungarian translation
+
+   * packages/apps/Settings/
+b6b0ed0 Properly remove root access under DevSettings
+b578eb2 Cleanup
+b223fad Merge remote-tracking branch 'los/cm-14.1' into nougat
+d0992f3 Vectorize viper logo
+c0d6485 Fix derps
+545f8f5 Update PT-BR Translations
+6630c38 Fix NPE of backlight settings [2/2]
+1797841 Fix crash while searching in Settings
+94ff733 Fix apn can't be updated when pressing back key
+a3e88d2 Make headset icons consistent before / after pairing
+6f132af Clean up and fix deviceinfo
+
+   * packages/apps/Venom/
+5ff0cb8 Restart systemui without root
+705c893 Merge branch 'nougat' of https://github.com/Viper0S/android_packages_apps_Venom into nougat
+6e01879 Fix derps
+e03b323 Update PT-BR translations
+
+   * packages/services/Telephony/
+96a9e3c telephony: Fix and move CAF strings
+
+   * vendor/cmsdk/
+f3d7492 Merge remote-tracking branch 'los/cm-14.1' into nougat
+
+   * vendor/viper/
+8fd8ecd Add ViaBrowser
+cc81f77 Remove exchange
+
+====================
+     05-22-2017
+====================
+
+
+   * build/
+3aed4cb core: Remove color leftover
+3043be7 build: Conditionally disable ccache for modules with FDO enabled
+5e62643 OMS-N: adb shell command to access OverlayManagerService
+
+   * frameworks/base/
+749a328 Remove venon long click easter egg
+bcd68fd Merge remote-tracking branch 'los/cm-14.1' into wip
+cf9054f Revert "Revert "SystemUI: Fix QSTileHost exception""
+bc78d1a SettingsProvider: Add missing INTERACT_ACROSS_USERS_FULL permission
+33af022 Fix screenpinning from showing up unless enabled
+e861e9c base: Screen pinning improvements
+f378f76 Stop holding mProxyLock while downloading PAC script data.
+ddf1d3b NullPointerException: Attempt to invoke virtual method 'int android.os.Parcel.dataSize()' on a null object reference
+a30ad72 frameworks/base: reduce the setTransactions
+4466c44 Fix system app can't uninstall apps silently
+0d26ec5 Fix memory leak in WifP2pManager
+1047a1f Revert "Changes for upgrade to OkHttp 2.7.5"
+2e4e86c Fix carrier label not getting scaled properly
+a3d6ad1 hwui: Fix HWUI_COMPILE_FOR_PERF for non-arm
+3ca8ef6 StatusBar: Catch OOM caused by third-party icons
+33322ac Aapt2: Fix png leak
+9efbccf Fix the Wi-Fi wrong status when turning Wi-Fi on
+9d0f4c1 wifi: catch UnsupportedOperationException for getMatchingWifiConfig
+1999b46 SettingsLib: wifi: Fixed AccessPoint tracking for Passpoint networks
+26b9aea Destroy Allocation with ScriptIntrinsicLut
+b94248c Destroy Allocation right away on exception
+8b21f67 Do not CloseGuard KernelID or FieldID
+1cbf203 Fix keyguard is black background while screen turning off/on quickly
+a89462f sensors: intern jstrings for memory savings
+5629682 sensors: fix native crash when dynamic sensor is removed
+03c650e The network event should be an asynchronous callback.
+4a662fc Clear mGuestRestrictions before loading from disk
+0ff8fdb AssetAtlasService: fix multi-threaded computeBestConfiguration
+d207f45 Revert "Fix BaseBundle IllegalArgumentException"
+4379c3c Revert "SystemUI: Fix QSTileHost exception"
+37a3e94 Revert "core: Set the power menu volume selector as green"
+9f898f3 Revert "Do not stop while mCurrentClient is already in the process of stop."
+5d534a1 Revert "send cancel cmd to hal in Lockout mode."
+30bf578 Fix a NPE with outlineProvider="none"
+72e7c14 Keyguard: Move CAF strings to cm_strings.xml.
+fefc554 Changes for upgrade to OkHttp 2.7.5
+9316c0a MountService: Don't run benchmarks after trimming
+f98e16f ActivityStack index OOB cause device restart
+65976d2 Fix DateTimeView fc issue
+0ebd606 fix KeyEvent can't correctly finish when inputmethod time out happend
+5ae0f56 uce: make status code precise
+a79a3c2 Skip send broadcast to the receiver whoes user has not started.
+1c990a9 TileAdapter: use colorPrimary for tile item decoration background
+ae758c1 SystemUI: Don't disable rotation tile
+ab6f2e8 fix NullPointerException in Notification.java
+3181918 Need to resize new created stack to fullscreen after docked stack tasks has moved into it.
+1bcfa9f Complete cleanup broadcast receivers of target user
+b2e9e37 modify the parameter in cleanupLocked
+6e2d7c2 Fix a null pointer exception in FragmentManager
+26c8cad hwui: skip draw empty frame
+8a6f4c6 base: set scrolling to 0.006f
+3eb748b Open /data/anr/traces.txt with O_APPEND.
+7f8960b Use theme accent color for the multiwindows divider
+ef3d401 Fix Aosp bug on custom apps tiles: color not changing on tile state change
+4a9d08d Fix the notification issue shown on startForeground
+e4285bc UsageStats: App idle parole should be off when app idle disabled.
+d602cc9 Remove duplicate code for binder ID clear and restore.
+975f2ea jni: adapt to removal of property name size limit
+2069d8a Fix NPE while performing NetworkStatsService.removeUidsLocked()
+94e414c Fix race condition when writing UidState of appops.
+2c0c8ff Frameworks/base: Fix old code in MediaPlayer
+ce579a7 Bluetooth: Prioritize Bluetooth state change intent to start Service
+fd99e25 combo bug when location reported by providers do not come with extras
+6115179 Fix potential NPE in application state
+213bb19 Fix the reset of boosted zygote thread priority.
+c8d7cb3 Skip ListPopupWindow position update if detached
+6e17b86 java.lang.NullPointerException Attempt to get length of null array in FileRotator
+b42830c StrictJarFile: Handle multiple cert files correctly.
+7e30c7a Add finally block to close the stream.
+203bd20 fix system_server crash issue caused by fd leak.
+d395f71 Framework: Ensure image heap string literals for Patterns
+b6e6568 ExtShared build as priv-app
+afa31f5 fix system server crash caused by CME in usage stats
+ab2d8da Don't start persist APP when it was disabled.
+2e610fd Fix issue that no multiuser UID_REMOVED received.
+2848695 am: remove unnecessary check
+05a73ff Partial Revert "Replace com.android.internal.util.Predicate with java.util.function.Predicate"
+dba0cfd Replace com.android.internal.util.Predicate with java.util.function.Predicate
+0f48ada Extra generic type information to aid certain javacs.
+3b4e640 Speed things up to the max
+211d215 Remove redundant lockscreen shown check
+71625c7 Turned ENABLE_CPUSETS into runtime decision.
+56a3950 Enable multidex for SystemUITests
+d2cf874 Define priority for callerinfo selection
+10c5c5b Fix inconsistant display number format issue in Messaging application
+fd9afde Handle NPE in TelephonyManager
+3d19366 Fix deprecated range_x calls.
+062c1de Move hwui private headers to frameworks/base/libs/hwui/private
+2146a9a hwui: Fix the length of partial updates system property
+4a27cf7 Fix and work around aliasing rule violations
+56bdd46 Fix dead lock in Tethering state machine
+c065de8 Fix client holding in fingerprint removal
+79382b5 Skip task that has not real activities
+023b570 with LockTaskMode violation, remove created TaskRecord
+6754d98 Fixes the thread-safe issue.
+30be84c Remove drawables we don't need
+584839b revert some fastJni
+d763bfc Prevent re-entrant watcher from causing exception.
+63d28b5 Better QS detail clip animation
+32f64ff Icon does not disappear even though it is disabled in Launcher
+e73e9ce base: volume dialog: hide headers on all streams if requested
+7aa32ea Fix for reboot due to Volume State not updated in callback
+cfb266c Fix crash issue on Storage Manager app
+aee4b61 SystemUI: update volume dialog when re-inflating views
+ee2d175 ActivateableNotificationView: re-inflate on configuration change
+ebdbd80 Fixes can not boot issue.
+adebb4d DefaultPermissionGrantPolicy: Pass correct arguments
+3366486 Fix stack-buffer-overflow detected by AddressSanitizer.
+31365ce Prevent LocalSocket from creating an fd if fd is already there
+9e29bf8 systemservice will be restarted if force stopping android.print.cts running
+ed12514 LocalSocketImpl.cpp: Set O_CLOEXEC on received FDs
+33ea083 AppOps: Avoid RuntimeException and log spam
+c3a9522 ActivityManagerNative: Prevent possible soft-reboot
+d6ec3d7 send cancel cmd to hal in Lockout mode.
+a8632c5 check whether the ActivityClientRecord of token is null when handleStopActivity
+0794ebc schedule vsync immediately when requested from the Looper thread
+619ae7c Fix moveTaskToBack: Activity below home were resumed instead of home
+727e7d3 Prevent lost mTaskToReturnTo value for moving home
+1d044cf Correct the sync lock for ManagedServices's mServices.
+d0aeb1d Fix gear not showing when rotation or RTL changed
+7c54653 Immediately adjust hideSensitivity of Notifications
+e8ea387 Fix issue when start android/com.android.internal.backup.LocalTransportService
+a8b7ae7 Skip guestToRemove users when PackageManager initializing user status.
+9ad0165 Fix a use-of-uninitialized-value warning.
+a1dd40c OBEX : Handle Negative index Exception
+09cef747 Add timeout for dumpNativeBacktraceToFile.
+22aff75 AudioAttributes: setCapturePreset: Handle VOICE_*
+dc08ebe synchronized gRecyclerLock to avoid InputEvent been change while dump
+d0f9305 Do not turn off voice interaction when close system dialogs reason is assist
+ea0501c Remove unused variable.
+708b652 Add make_unique function for jni
+00b8cf5 Resolve deadlock between ActivityManagerService and PowerManagerService
+91ebed7 Fix BaseBundle IllegalArgumentException
+64d7c1e Fix memory-leak warnings from the static analyzer
+d40a814 Disable touch slop for generated gesture events
+d20e11b Fix a use-of-uninitialized-value warning.
+5c458de DeadZone: add missing call to TypedArray.recycle()
+e2f2327 Avoid deadlock when installing app
+fedf8b5 Save "mState.restored" in onSaveInstanceState of FilesActivity
+9dceb23 Cleanup uses of sprintf so we can deprecate it.
+12f3f9d KernelWakelockReader: stop the panic
+078d1a7 ParcelFileDescriptor: can we stop the panic here?
+bd88457 Add support for MTP perceived device type property.
+6c935c4 pinned stack should always be on-top of visible stacks
+abc5efc unbindBackupAgent and initialize inFullBackup
+0bbd163 Add -fno-strict-aliasing to compiler flags
+c175702 Fix ListView can not be moved after rotation.
+550ccbf sysui: add missing string to volume panel
+eb6a3ce Switch frameworks/base/core/jni from gcc to clang.
+9e7f2b1 base: Add handling SQLiteDatabaseCorruptException
+aecb5f5 Catch KeyStoreException for setting profile lock
+3968d2b Prevent IndexOutOfBoundsException
+458d092 frameworks: squash of leak & race fixes
+c4a508d fix OutOfBoundsException in DisplayContent.java
+5366b3e Move service from starting list once onStartCommand get called
+893ca34 Handle IllegalArgumentException
+cf79983 Deadlock in PackageInstallerSession
+87b3e87 pm: do not verify system apps signatures
+236b23c Fix the bug in replacing a fragment with itself.
+8b6b947 Replace usages of ShortNumberUtil with ShortNumberInfo
+949f0d9 Fix issue in PhoneNumberUtils.compareLoosely
+49580db Fix struct vs. class mismatch in forward definitions
+2594c8d Fix for google backup and restore
+f00e7ed Fix Photosphere/Camera FCs
+4158521 Fix race condition in setting notification panel height
+97f9058 Debug: Initialize local to false
+4fd959b Incorrect key object in EphemeralIntentResolver.filterResults
+efd9882 Fix wrong focused stack if there are finishing tasks.
+e14c2f9 Fix warning: Potential leak of memory pointed to by 'set'
+4732f3e Prevent some alarm pathologies
+ea3f170 Do not stop while mCurrentClient is already in the process of stop.
+1acf3d3 Handle application crash in new thread.
+f17ca3b clean up pending broadcast receviers when force stop package
+90fccca fix service could not be started correctly when app.thread == null
+8935367 We should notify the foreground activity changes immediately.
+4bc5c2c Clear pending activity launches when force stop package
+8ee8a53 Also remove activity record if its app is removed.
+4b24180 Do not kill attaching process when removing task.
+3b7f9aa clean notification before delete the activity
+9c22194 Bring up Service if not schedule to restart
+3c2a8da Fix the inconsistence between ProcessRecord and BroadcastQueues
+df1446d Fix illegal argument exception when take picture.
+227041e Fix type casting for broadcast delay with service
+8992a35 Remove freezing window to fix UI freezing issue
+62799d1 Sometimes property service is slow to respond
+6f82dc1 Fix potential heap memory leakage.
+59aacc3 Fixes the system server crash issue caused by uncatched exception.
+b2cabda Fix CountDownTimer handler memory leak
+5390070 Fix race condition of job extras.
+a6b1635 SharedStorageAgent: Fix onRestore
+9b1c61a Fix java crash under DhcpClient.java
+c4441ba suppress the accessibility IllegalStateException
+84afdb6 Avoid ConcurrentModificationException in method dump
+7446a27 Checking mCurrentValue twice instead of mCurrentValues
+70da56d Fix: Fix dlfree error when delet mZipInflater.
+fad0831 SystemUI: Reload the EndNowButton label
+10ff57a Use async thread for performPoll in NetworkStats
+c5cac70 Rename the backup file to base file when backup exists.
+a999bb8 Fix static analyzer warnings.
+1f860c4 Relax namespace restriction on system server classloader
+8d63651 missing includes
+ca08b23 SysUI: prevents crash caused by NetworkOverLimitActivity
+15a167f Handle invalid pointerId
+8b06519 Fix logic typo in the JobPackageTracker
+b17000d Handle exception when mount service not ready.
+1af8733 Also block touches while customizer is animating.
+6c9aa6e note the last msg that might make the Looper blocking
+29f2202 Fix keyguard flash issue
+1178ce0 Prevent destroy surface during window replacement.
+4947935 Avoid the system server hang forever.
+f9cf624 Avoid NPE when restarting task all activities of which will be cleared
+08e8620 Fix error java.lang.NullPointerException
+2feb864 camera: catch NullPointerException for Nexus 5
+52254b9 Fix NullPointerException in MediaPlayer
+e122da1 SystemUI: AssistManager: create mView if null
+de1b6fe Fix pms systemReady NullpointerException
+4438a4f Fix the NullPointerException
+5f92039 Fix NPE from AppOpsManager.checkPackage.
+4f74c0b InputWrapper: opt out early if session == null
+51b517e Fix potential NULL dereference errors.
+05c6a42 ANR related to split-screen
+654f1f0 Remove the unnecessary window animation request
+5b2048c Fix a NPE when putting a null-Bundle in an Intent
+273f318 SettingsLib: java.lang.NullPointerException
+b21a82f Post noteProcessFinish() to handler thread
+bd7a334 Fix NPE in NetdResponseCode.InterfaceClassActivity
+eb643b2f Checking null in NsdService
+00177a6 Fix NPE in BaseStatusbar in onListenerConnected
+8c8c30a Fix NPE in TextUtils
+22fe89a Handle NPE due to threading race
+effeebd Fix NPE in updateEmptyShadeView() upon screen rotation
+5cd418c Speed up the volume panel timeout
+d3917b5 Fix possible NPE
+68dee9b Delay move input method windows when exiting.
+39c85a9 sanitize niceName before doing wrap property lookup
+b92dcc0 fix force stop home app may black screen.
+311e63e Frequently used OpenGL ES methods whitelisted for fast JNI path
+19331eb core: Set the power menu volume selector as green
+47055ce Fix array exception in createAutoBrightnessSpline
+5028e41 Adjust the minWidth and minHeight whenever there is change in density.
+19730cf KeySetManagerService: prevent NPE
+ce9a13d DND tile: Longpress when active to show detail view
+261ee3b Added missing @DrawableRes
+a0cd03e Fix wrong peek height of the notification panel
+0e54a00 frameworks: ScrollView.SavedState toString fix
+bb60f2d Show icon of package associated with Toast
+a28ed574 SystemUI: FIX No sim - airplane mode padding
+bd992e6 Fix memory corruption caused by patchCache.clear
+3d23d25 Fix right lockscreen shortcut icon resetting
+b2132c4 ListPopupWindow: Correct a negative height before showing
+7a6df12 Remove duplicate uses-permission
+03bdb7c Remove unsupported RS graphics API tests.
+1d30fc1 limit the input value for Math.acos to prevent returning NaN
+0d1c2ea Allow Python Versions Higher than 2.6
+2c892a1 Settings: Change defaults
+93118b4 Toast long timeout fix
+14e52c1 Notifications: Materialize missed calls icons
+bbfd9dd base: Change toast frames color to some better look ones
+54549a6 Integer.valueOf() -> Integer.parseInt() to avoid allocation.
+35d1d42 Avoid needless Integer.valueOf() object allocation.
+c9d7320 base: Turn off some debugs
+b7d4d44 aapt: Default to 0 compression ratio
+670bfad Fix permissions for CTS [1/2]
+48e07cd OMS: StrictMode and files under /data/system/theme/
+314035c Add protected broadcast for app crash broadcast
+a6143a6 Themes: Allow volume slider and thumb to work with custom images.
+b66c1a9 Separate tile label color from icon drawable color
+b90ceab Themes: Expose Keyboard Shortcuts Dialog
+dcf1908 Expose Screenshot flash and background colors
+33f94d2 Hold "volume up" during boot to disable all overlays
+02219f4 Keyguard: disable logspilling debug
+7c3c3d8 base: location: silence log spilling
+7d7838a telephony: Hack GSM and LTE signal strength
+cecbcc4 Increase text size for circle/landscape battery style
+0310a41 base : Update default material popup animations
+3c8dfc4 Improve scrolling cache
+12dd441 base: Speed things up
+2382b424 Add "android.permission.READ_PHONE_STATE" to manifest
+dfcf3d3 SystemUI: Protect com.android.systemui.doze.pulse
+9165d9b base: Set animation scaling to 0.6
+123b470 Fix SuperSU related spam
+572bf0b Update screenshot notification icon
+c672a8c 'Do not disturb' add 15 min Steps and up to 14 Hours
+14ccc78 Status bar: Update notification count icons
+90ef7d0 Make PIN/password failed attempts dialog non-cancelable
+f4274a6 Fix single action power menu issue
+c21f23d MTU should be 1358 as per 3GPP standards, especially for LTE radio interfaces.
+41c7dcb fix wrong algorithm in getMobilePowerPerPacket()
+b99899b SystemUI: disable statusbar time refresh when screen off
+eff3e1d Keyguard: don't refresh ui when screen off
+6e3245d Revert "Some layout adjustments"
+449ea1a Revert "base: lineage adb icon"
+
+   * frameworks/native/
+aa4f939 Merge remote-tracking branch 'los/cm-14.1' into nougat
+
+   * manifest/
+c8a2fcb Remove bullshits
+68e3493 Fix
+83624b2 Stop tracking some repos
+
+   * packages/apps/Contacts/
+db4fee1 Merge remote-tracking branch 'los/cm-14.1' into nougat
+
+   * packages/apps/ContactsCommon/
+4458d2d Merge remote-tracking branch 'los/cm-14.1' into nougat
+
+   * packages/apps/Dialer/
+b5c0260 Merge remote-tracking branch 'los/cm-14.1' into nougat
+
+   * packages/apps/PhoneCommon/
+cee274c Merge remote-tracking branch 'los/cm-14.1' into nougat
+
+   * packages/apps/VPapers/
+3939632 Fix pt-br translation
+f11fcc9 Bringup VPapers
+
+   * packages/apps/Venom/
+8deb711 Merge branch 'nougat' of https://github.com/Viper0S/android_packages_apps_Venom into nougat
+4e76a4a Venom: Update button backlight brightness in real time
+8c14f51 Fix NPE of backlight settings [1/2]
+
+   * packages/services/OmniJaws/
+e620636 Update PT-BR translations
+ed487c6 OmniJaws: add pinWheel directions for wind
+e926a63 WindSpeed: allow to translate
+ce4a692 Add strings for lock screen weather
+
+   * packages/services/Telephony/
+adbc4fb Merge remote-tracking branch 'los/cm-14.1' into nougat
+
+   * system/core/
+2b1c3f7 Add flag to prevent /charger symlink Signed-off-by: jhenrique09 <jhenrique09.mcz@hotmail.com>
+8375ab9 Lockscreen charging info: real time values [2/4]
+e9c386a Merge remote-tracking branch 'los/cm-14.1' into nougat
+
+   * system/sepolicy/
+cb46f96 system_app.te: Give permissions for using sdcardfs
+697e76c Add policy to SELinux to allow ViPER4Android in enforcing mode
+b652e45 sepolicy: Allow platform_app to run su_exec() (1/2)
+db4cb6c sepolicy: Allow system_server to run su_exec() (1/2)
+8abd1b0 sepolicy: Allow system_app to run su_exec()
+937171d sepolicy: Allow remount /system
+b006104 sepolicy: add file and domain trans to interfacer
+660bc30 sepolicy: Allow system_server to set theme_prop
+
+   * vendor/ViperOTA/
+68c763c Update viper_osprey.xml
+532d8b7 Update viper_osprey.xml
+
+   * vendor/viper/
+d623bd6 Gallery: new icon
+2e84a83 Little fixes
+cc75687 Fix codename device missing
+275e59f Change version
+9e452a4 Use Google Nexus Audio Files [3/3]
+02610f4 overlay: more round icons
+bbe6657 Missed substratum prop
+ce32f56 Disable livedisplay by default
+72b3406 Cleanup
+23c8960 Update Turbo.apk from 6p N2G47O
+9cf11b2 Remove magisk Revert "vendor: update MagiskManager.apk v4.3.3 and MagiskManager.zip v12.0"
+6b2db7b Remove some apps
+
+====================
+     05-21-2017
+====================
+
+
+   * build/
+0416aa9 Use Google Nexus Audio Files [2/3]
+03baba8 build: Remove vendor check
+1119a3e Don't pass empty arguments to ninja
+0577771 cout: move to $out
+396196f build: Don't build tests
+8e67de0 edify: Fix _WordWrap function calls
+fe04d65 build: Remove annoying text when flashing
+3574c73 releasetools: Fix an equality check bug when asserting stash size.
+94ef0ad Use 'release-keys' for build tag
+0e2abe2 Remove Feedback Directed Optimization support
+a2bd930 disable Dalvik lock contention logging as it isnt needed
+91fdb5e zipalign missing header
+2d9af15 Disable the after flash image verification
+f135e63 build: allow kernel to ALL_PREBUILT
+81072f8 build: Enable custom ccache cache dir for Android
+2fc8844 Merge remote-tracking branch 'los/cm-14.1' into wip
+c27d9fd Remove Magisk Revert "Magisk as default and define explict rootless method [1/2]"
+2507d6a Nuke Email
+7d1990c Don't add these items
+
+   * kernel/xiaomi/msm8953/
+b13c3e5 fs: f2fs: fix cherry-pick derps
+9df5df0 f2fs: switch to using fscrypt_match_name()
+3ab4218 fscrypt: introduce helper function for filename matching
+a276811 fscrypt: fix context consistency check when key(s) unavailable
+63e016c fscrypt: Move key structure and constants to uapi
+b6947b8 fscrypt: remove unnecessary checks for NULL operations
+cc3cca9 fscrypt: eliminate ->prepare_context() operation
+f389230 fscrypt: remove broken support for detecting keyring key revocation
+4308858 fscrypt: avoid collisions when presenting long encrypted filenames
+3a5efb4 f2fs: check entire encrypted bigname when finding a dentry
+e869fc5 f2fs: sync f2fs_lookup() with ext4_lookup()
+0299b37 f2fs: fix a mount fail for wrong next_scan_nid
+5404cda f2fs: relocate inode_{,un}lock in F2FS_IOC_SETFLAGS
+deaa0f5 f2fs: show available_nids in f2fs/status
+2050950 f2fs: flush dirty nats periodically
+bb1569e f2fs: introduce CP_TRIMMED_FLAG to avoid unneeded discard
+d5942a6 f2fs: allow cpc->reason to indicate more than one reason
+6ea58d4 f2fs: release cp and dnode lock before IPU
+0ce727d f2fs: shrink size of struct discard_cmd
+867060a f2fs: don't hold cmd_lock during waiting discard command
+dccc77e f2fs: nullify fio->encrypted_page for each writes
+ade2073 f2fs: sanity check segment count
+b6d24bf f2fs: introduce valid_ipu_blkaddr to clean up
+dc90886 f2fs: lookup extent cache first under IPU scenario
+f7ee3fb f2fs: reconstruct code to write a data page
+3239736 f2fs: introduce __wait_discard_cmd
+f38eddb f2fs: introduce __issue_discard_cmd
+373e24a f2fs: enable small discard by default
+65b3265 f2fs: delay awaking discard thread
+48a9d7b f2fs: seperate read nat page from nat_tree_lock
+63b4e09 f2fs: fix multiple f2fs_add_link() having same name for inline dentry
+ea2a1c6 f2fs: skip encrypted inode in ASYNC IPU policy
+8cd867a f2fs: fix out-of free segments
+6e96644 f2fs: improve definition of statistic macros
+210e510 f2fs: assign allocation hint for warm/cold data
+e29bac5 f2fs: fix _IOW usage
+c5cbd08 f2fs: add ioctl to flush data from faster device to cold area
+5ce46af f2fs: introduce async IPU policy
+f3fc965f f2fs: add undiscard blocks stat
+0558eb4 f2fs: unlock cp_rwsem early for IPU writes
+6d78773 f2fs: introduce __check_rb_tree_consistence
+c7b799d f2fs: trace __submit_discard_cmd
+4fc152b f2fs: in prior to issue big discard
+8c43ad7 f2fs: clean up discard_cmd_control structure
+4c267d1 f2fs: use rb-tree to track pending discard commands
+e3744f0 f2fs: avoid dirty node pages in check_only recovery
+9c5723e f2fs: fix not to set fsync/dentry mark
+0693f48 f2fs: allocate hot_data for atomic writes
+7fd4b25 f2fs: give time to flush dirty pages for checkpoint
+30fde76 f2fs: fix fs corruption due to zero inode page
+98e0d62 f2fs: shrink blk plug region
+b753ddf f2fs: extract rb-tree operation infrastructure
+876a31b f2fs: avoid frequent checkpoint during f2fs_gc
+ee0c5b0 f2fs: clean up some macros in terms of GET_SEGNO
+18b0142 f2fs: clean up get_valid_blocks with consistent parameter
+8508b0d f2fs: use segment number for get_valid_blocks
+5d56e4e f2fs: guard macro variables with braces
+e5aec3c f2fs: fix comment on f2fs_flush_merged_bios() after 86531d6b
+1485647 f2fs: prevent waiter encountering incorrect discard states
+de9c732 f2fs: introduce f2fs_wait_discard_bios
+21acd8e f2fs: split discard_cmd_list
+b60ebc1 Revert "f2fs: put allocate_segment after refresh_sit_entry"
+4fa7e5c f2fs: split make_dentry_ptr() into block and inline versions
+00adff5 f2fs: submit bio of in-place-update pages
+14bb3b1 f2fs: remove the redundant variable definition
+5e87005 f2fs: avoid IO split due to mixed WB_SYNC_ALL and WB_SYNC_NONE
+6cff0a4 f2fs: write small sized IO to hot log
+fc35721 f2fs: use bitmap in discard_entry
+915fc8a f2fs: clean up destroy_discard_cmd_control
+901d15b f2fs: count discard command entry
+aa21a1c f2fs: show issued flush/discard count
+3341267 f2fs: relax node version check for victim data in gc
+a88e937 f2fs: start SSR much eariler to avoid FG_GC
+ce491f7 f2fs: allocate node and hot data in the beginning of partition
+b0f0f2b f2fs: fix wrong max cost initialization
+42d7e58 f2fs: allow write page cache when writting cp
+6b0a9a0 f2fs: don't reserve additional space in xattr block
+00bc61a f2fs: clean up xattr operation
+000694d f2fs: don't track volatile file in dirty inode list
+a2d0d568 f2fs: show the max number of volatile operations
+7424433 f2fs: fix race condition in between free nid allocator/initializer
+2c242d4 f2fs: use set_page_private marcro in f2fs_trace_pid
+aef41a2 f2fs: fix recording invalid last_victim
+5895719 f2fs: more reasonable mem_size calculating of ino_entry
+b50142c f2fs: calculate the f2fs_stat_info into base_mem
+559822f f2fs: avoid stat_inc_atomic_write for non-atomic file
+f13d2e1 f2fs: sanity check of crc_offset from raw checkpoint
+84cf3f8 f2fs: cleanup the disk level filename updating
+a88a466 f2fs: cover update_free_nid_bitmap with nid_list_lock
+b31b74d f2fs: fix bad prefetchw of NULL page
+deb1411 f2fs: clear FI_DATA_EXIST flag in truncate_inline_inode
+a5946c5 f2fs: move mnt_want_write_file after arguments checking
+449fe78 f2fs: check new size by inode_newsize_ok in f2fs_insert_range
+981977a f2fs: avoid copy date to user-space if move file range fail
+4fc2d94 f2fs: drop duplicate new_size assign in f2fs_zero_range
+0d23c39 f2fs: adjust the way of calculating nat block
+82fe012 f2fs: add fault injection on f2fs_truncate
+03f5f50 f2fs: check range before defragment
+2ecd071 f2fs: use parameter max_items instead of PIDVEC_SIZE
+0979b03 f2fs: add a punch discard command function
+8f7cf1f f2fs: allocate a bio for discarding when actually issuing it
+92178b0 f2fs: skip writeback meta pages if cp_mutex acquire failed
+f08862a f2fs: show more precise message on orphan recovery failure
+7682c2a f2fs: remove dead macro PGOFS_OF_NEXT_DNODE
+0fcaebc f2fs: drop duplicate radix tree lookup of nat_entry_set
+31c8308 f2fs: make sure trace all f2fs_issue_flush
+929db69 f2fs: don't allow volatile writes for non-regular file
+45d0c80 f2fs: don't allow atomic writes for not regular files
+25e97fe f2fs: fix stale ATOMIC_WRITTEN_PAGE private pointer
+f619233 f2fs: build stat_info before orphan inode recovery
+cf5da6e f2fs: fix the fault of calculating blkstart twice
+5c96a41 f2fs: fix the fault of checking F2FS_LINK_MAX for rename inode
+a2e6884 f2fs: don't allow to get pino when filename is encrypted
+a092016 f2fs: fix wrong error injection for evict_inode
+638435a f2fs: le32_to_cpu for ckpt->cp_pack_total_block_count
+c98ef18 f2fs: combine nat_bits and free_nid_bitmap cache
+6df017e f2fs: skip scanning free nid bitmap of full NAT blocks
+93b14fa f2fs: use __set{__clear}_bit_le
+a3eda30 f2fs: update_free_nid_bitmap() can be static
+0904534 f2fs: __update_nat_bits() can be static
+4da3dca f2fs: le16_to_cpu for xattr->e_value_size
+35ba018 f2fs: don't overwrite node block by SSR
+b087765 f2fs: don't need to invalidate wrong node page
+bfadb55 f2fs: fix an error return value in truncate_partial_data_page
+4b2d21a fscrypt: catch up to v4.11-rc1
+9e498b0 f2fs: avoid to flush nat journal entries
+56a60c1 f2fs: avoid to issue redundant discard commands
+c917e99 f2fs: fix a plint compile warning
+0c93ac6 f2fs: add f2fs_drop_inode tracepoint
+599a0a3 f2fs: Fix zoned block device support
+b65e4e6 f2fs: remove redundant set_page_dirty()
+f40dced f2fs: fix to enlarge size of write_io_dummy mempool
+eee36c9 f2fs: fix memory leak of write_io_dummy mempool during umount
+5f3d6c9 f2fs: fix to update F2FS_{CP_}WB_DATA count correctly
+c27bebd f2fs: use MAX_FREE_NIDS for the free nids target
+bcdfccc f2fs: introduce free nid bitmap
+a1d073b f2fs: new helper cur_cp_crc() getting crc in f2fs_checkpoint
+834eafe f2fs: update the comment of default nr_pages to skipping
+de4b495 f2fs: drop the duplicate pval in f2fs_getxattr
+8c2440e f2fs: Don't update the xattr data that same as the exist
+7ab84a5 f2fs: kill __is_extent_same
+2ed15ae f2fs: avoid bggc->fggc when enough free segments are avaliable after cp
+eb1a7a8 f2fs: select target segment with closer temperature in SSR mode
+e1d3c31 f2fs: show simple call stack in fault injection message
+326b4d7 fscrypt: catch fscrypto_get_policy in v4.10-rc6
+363dce1 f2fs: use __clear_bit_le
+3ddcb7e f2fs: no need lock_op in f2fs_write_inline_data
+91af94f f2fs: add bitmaps for empty or full NAT blocks
+55951e8 f2fs: replace rw semaphore extent_tree_lock with mutex lock
+8fa82aa6 f2fs: avoid m_flags overlay when allocating more data blocks
+59d3505 f2fs: remove unsafe bitmap checking
+403fe64 f2fs: init local extent_info to avoid stale stack info in tp
+c884ba7 f2fs: remove unnecessary condition check for write_checkpoint in f2fs_gc
+d1f5dcc f2fs: do SSR for node segments more aggresively
+419a0fc f2fs: check discard alignment only for SEQWRITE zones
+6fdd361 f2fs: wait for discard completion after submission
+9150380 f2fs: much larger batched trim_fs job
+46c6d04 f2fs: avoid very large discard command
+f5f2694 f2fs: find data segments across all the types
+91143ed f2fs: do SSR in higher priority
+7fd79e8 f2fs: do SSR for data when there is enough free space
+3376008 f2fs: node segment is prior to data segment selected victim
+c0fddc7 f2fs: put allocate_segment after refresh_sit_entry
+ffcca2e f2fs: add ovp valid_blocks check for bg gc victim to fg_gc
+7bc2b50 f2fs: do not wait for writeback in write_begin
+b511a80 f2fs: replace __get_victim by dirty_segments in FG_GC
+cfd6bbe f2fs: fix multiple f2fs_add_link() calls having same name
+2c803fd f2fs: show actual device info in tracepoints
+e47ca7e f2fs: use SSR for warm node as well
+ffd97a6 f2fs: enable inline_xattr by default
+55eea68 f2fs: introduce noinline_xattr mount option
+57c60af f2fs: avoid reading NAT page by get_node_info
+0ed6f8b f2fs: remove build_free_nids() during checkpoint
+f28626c f2fs: change recovery policy of xattr node block
+7209f94 f2fs: super: constify fscrypt_operations structure
+ff86fabf f2fs: show checkpoint version at mount time
+eb2faef f2fs: remove preflush for nobarrier case
+d2a1fda f2fs: check last page index in cached bio to decide submission
+40c9c5e f2fs: check io submission more precisely
+5aa0217 f2fs: call internal __write_data_page directly
+6fb79ca f2fs: avoid out-of-order execution of atomic writes
+753c502 f2fs: move write_node_page above fsync_node_pages
+909e207 f2fs: move flush tracepoint
+0acd94b f2fs: show # of APPEND and UPDATE inodes
+0e98a03 f2fs: fix 446 coding style warnings in f2fs.h
+f22f049 f2fs: fix 3 coding style errors in f2fs.h
+2894557 f2fs: declare missing static function
+dc06742 f2fs: show the fault injection mount option
+7fde43d f2fs: fix null pointer dereference when issuing flush in ->fsync
+cf7ce36 f2fs: fix to avoid overflow when left shifting page offset
+ad2b5ca f2fs: enhance lookup xattr
+b7aa37b f2fs: fix a dead loop in f2fs_fiemap()
+2db00ee f2fs: show # of on-going flush and discard bios
+6b75d12 f2fs: add a kernel thread to issue discard commands asynchronously
+80a1874 f2fs: factor out discard command info into discard_cmd_control
+aed4314 f2fs: reorganize stat information
+48364a8 f2fs: clean up flush/discard command namings
+1541644 f2fs: check in-memory sit version bitmap
+f0b7c7b f2fs: check in-memory nat version bitmap
+f9797a5 f2fs: check in-memory block bitmap
+ba76844 f2fs: introduce FI_ATOMIC_COMMIT
+0bb5294 f2fs: clean up with list_{first, last}_entry
+3d03512 f2fs: return fs_trim if there is no candidate
+b72076f f2fs: avoid needless checkpoint in f2fs_trim_fs
+6c13bd6 f2fs: relax async discard commands more
+e1afadb f2fs: drop exist_data for inline_data when truncated to 0
+02bd2aa f2fs: don't allow encrypted operations without keys
+e447fd2 f2fs: show the max number of atomic operations
+e97b568 f2fs: get io size bit from mount option
+5be9bbd f2fs: support IO alignment for DATA and NODE writes
+765e925 f2fs: add submit_bio tracepoint
+5deedbd f2fs: reassign new segment for mode=lfs
+e9ee659 f2fs: fix a missing discard prefree segments
+d4f189d f2fs: use rb_entry_safe
+712a95f f2fs: add a case of no need to read a page in write begin
+1bfd392 f2fs: fix a problem of using memory after free
+12312d1 f2fs: remove unneeded condition
+e20f781 f2fs: don't cache nat entry if out of memory
+04d7204 f2fs: remove unused values in recover_fsync_data
+85e0723 f2fs: add migrate_page to avoid patch conflicts
+1f3d1f7 f2fs: support async discard based on v4.9
+1ceb750 f2fs: resolve op and op_flags confilcts
+3483139 f2fs: fix a missing size change in f2fs_setattr
+8a67bd1 fs/super.c: fix race between freeze_super() and thaw_super()
+1ac8e2d scripts/tags.sh: catch 4.9-rc6
+405dcbb f2fs: fix to access nullified flush_cmd_control pointer
+edafa8c f2fs: free meta pages if sanity check for ckpt is failed
+71d3798 f2fs: detect wrong layout
+f5421d3 f2fs: call sync_fs when f2fs is idle
+44e5ae4 Revert "f2fs: use percpu_counter for # of dirty pages in inode"
+fc70a5d f2fs: return AOP_WRITEPAGE_ACTIVATE for writepage
+ae6635f f2fs: do not activate auto_recovery for fallocated i_size
+9145109 f2fs: fix 32-bit build
+e1e0424 f2fs: set ->owner for debugfs status file's file_operations
+b7b6432 f2fs: fix incorrect free inode count in ->statfs
+7421b18 f2fs: drop duplicate header timer.h
+bdf4102 f2fs: fix wrong AUTO_RECOVER condition
+e64e803 f2fs: do not recover i_size if it's valid
+eb0f0756 f2fs: fix fdatasync
+47b8ca5 f2fs: fix to account total free nid correctly
+439d4cf f2fs: fix an infinite loop when flush nodes in cp
+4d55f0f f2fs: don't wait writeback for datas during checkpoint
+6ddfe5c f2fs: fix wrong written_valid_blocks counting
+308c6c7 f2fs: avoid BG_GC in f2fs_balance_fs
+46bb3d3 f2fs: fix redundant block allocation
+1f76b1ed f2fs: use err for f2fs_preallocate_blocks
+3ce5c20 f2fs: support multiple devices
+1b147dc f2fs: allow dio read for LFS mode
+1e0ceba f2fs: revert segment allocation for direct IO
+d2e2a44 f2fs: return directly if block has been removed from the victim
+3e3b78f Revert "f2fs: do not recover from previous remained wrong dnodes"
+c62eede f2fs: remove checkpoint in f2fs_freeze
+2b0dcc1 f2fs: assign segments correctly for direct_io
+e5a8539 f2fs: fix wrong i_atime recovery
+43b0bf2 f2fs: record inode updating status correctly
+677e7a5 f2fs: Trace reset zone events
+4754d06 f2fs: Reset sequential zones on zoned block devices
+33671e5 f2fs: Cache zoned block devices zone type
+ce5eb79 f2fs: Do not allow adaptive mode for host-managed zoned block devices
+b06d8bf f2fs: Always enable discard for zoned blocks devices
+1116156 f2fs: Suppress discard warning message for zoned block devices
+578cb00 f2fs: Check zoned block feature for host-managed zoned block devices
+0711401 f2fs: Use generic zoned block device terminology
+18656ae f2fs: Add missing break in switch-case
+2a28120 f2fs: avoid infinite loop in the EIO case on recover_orphan_inodes
+e5a0dc7 f2fs: report error of f2fs_fill_dentries
+0b7a011 fs/crypto: catch up 4.9-rc6
+76c8110 f2fs: hide a maybe-uninitialized warning
+db3e610 f2fs: remove percpu_count due to performance regression
+2beafe1 f2fs: make clean inodes when flushing inode page
+430ccbc f2fs: keep dirty inodes selectively for checkpoint
+d26da37 f2fs: Replace CURRENT_TIME_SEC with current_time() for inode timestamps
+5502d98 f2fs: use BIO_MAX_PAGES for bio allocation
+a923c44 f2fs: declare static function for __build_free_nids
+3acc8bf f2fs: call f2fs_balance_fs for setattr
+d49bc31 f2fs: count dirty inodes to flush node pages during checkpoint
+b592f50 f2fs: avoid casted negative value as shrink count
+284dfba f2fs: don't interrupt free nids building during nid allocation
+699c4d9 f2fs: clean up free nid list operations
+c6b5e82 f2fs: split free nid list
+b9b5335 f2fs: clear nlink if fail to add_link
+c446c3e f2fs: fix sparse warnings
+80c31b4 f2fs: fix error handling in fsync_node_pages
+5a9e672 f2fs: fix to update largest extent under lock
+8a28630 f2fs: be aware of extent beyond EOF in fiemap
+ceb0ee0 f2fs: don't miss any f2fs_balance_fs cases
+f72c595 f2fs: add missing f2fs_balance_fs in f2fs_zero_range
+849f78a f2fs: give a chance to detach from dirty list
+0997024 f2fs: fix to release discard entries during checkpoint
+e9aeace f2fs: exclude free nids building and allocation
+fd24f5f f2fs: fix missing read/write function pointers
+26e5f3e f2fs: fix to determine start_cp_addr by sbi->cur_cp_pack
+69f7af5 f2fs: fix overflow due to condition check order
+3e25bf2 posix_acl: Clear SGID bit when setting file permissions
+7da145e f2fs: fix wrong sum_page pointer in f2fs_gc
+125905e f2fs: remove existing kfree_put_link
+514dcfa f2fs: introduce update_ckpt_flags to clean up
+cb6e37d f2fs: don't submit irrelevant page
+fa6fd91 f2fs: fix to commit bio cache after flushing node pages
+f8e7a7f f2fs: introduce get_checkpoint_version for cleanup
+4b69b9c f2fs: remove dead variable
+f2a4734 f2fs: remove redundant io plug
+b17095f f2fs: support checkpoint error injection
+40e2a3e f2fs: fix to recover old fault injection config in ->remount_fs
+c586420 f2fs: do fault injection initialization in default_options
+956fede f2fs: remove redundant value definition
+e8634be f2fs: support configuring fault injection per superblock
+27f786f f2fs: adjust display format of segment bit
+9758d8f f2fs: remove dirty inode pages in error path
+fa4eca4 f2fs: do not unnecessarily null-terminate encrypted symlink data
+9cb286c f2fs: handle errors during recover_orphan_inodes
+4a9e382 f2fs: avoid gc in cp_error case
+8a5ab77 f2fs: should put_page for summary page
+cb485b4 f2fs: assign return value in f2fs_gc
+8ff13bf f2fs: introduce cp_lock to protect updating of ckpt_flags
+4f49f74 f2fs: fix to avoid race condition when updating sbi flag
+15e12a2 f2fs: put directory inodes before checkpoint in roll-forward recovery
+65d18ab f2fs: use crc and cp version to determine roll-forward recovery
+05a3449 f2fs: preallocate blocks for encrypted file
+7f1e8f5 f2fs: show dirty inode number
+49c7d31 f2fs: support IO error injection
+152c802 f2fs: fix to return error number of read_all_xattrs correctly
+ab7495b f2fs: make f2fs_filetype_table static
+a6fb6b0 f2fs: handle error in recover_orphan_inode
+e4e7461 f2fs: remove dead code f2fs_check_acl
+f01466f f2fs: exclude special cases for f2fs_move_file_range
+d0e04f6 f2fs: fix to set PageUptodate in f2fs_write_end correctly
+f98bde4 f2fs: fix parameters of __exchange_data_block
+34c568d f2fs: avoid ENOMEM during roll-forward recovery
+a87cb2ac8 f2fs: add common iget in add_fsync_inode
+447be2c f2fs: check free_sections for defragmentation
+568e95d f2fs: forbid to do fstrim if fs has some error
+edd04c7 f2fs: avoid page allocation for truncating partial inline_data
+d799056 f2fs: no need to make zeros beyond i_size
+aceff1a f2fs: fix to detect temporary name of multimedia file
+b0701a5 f2fs: fix minor typo
+01ac494 f2fs: set dentry bits on random location in memory
+56f7e47 f2fs: fix to set superblock dirty correctly
+84ab206 f2fs: add roll-forward recovery process for encrypted dentry
+0830e73 f2fs: fix lost xattrs of directories
+08f780e f2fs: set encryption name flag in add inline entry path
+51ec373 f2fs crypto: avoid unneeded memory allocation in ->readdir
+8f3d0d6 f2fs: fix to do security initialization of encrypted inode with original filename
+dabc594c f2fs: do in batch synchronously readahead during GC
+71cf4ae f2fs: schedule in between two continous batch discards
+b1abcec f2fs: enable inline_dentry by default and add noinline_dentry option
+e745421 f2fs: fix a bug when using namehash to locate dentry bucket
+21b2b4b f2fs: fix to preallocate block only aligned to 4K
+2765a4f f2fs: fix non static symbol warning
+90a6a0a f2fs: remove unnecessary initialization
+36cf151 f2fs: remove redundant judgement condition in available_free_memory
+79d88fd f2fs: check return value of write_checkpoint during fstrim
+cf149d3 f2fs: fix to do f2fs_balance_fs in f2fs_map_blocks correctly
+045fe91 f2fs: avoid unneeded loop in build_sit_entries
+2885a3b f2fs: clean up foreground GC flow
+b8634f4 f2fs: set dirty state for filesystem only when updating meta data
+7814dab f2fs: skip new checkpoint when doing fstrim without fs change
+91d4a47 f2fs: add discard info to sys entry of f2fs status
+b2c1093 f2fs: reduce batch size of fstrim
+400f522 f2fs: do not use discard_map for hard disks
+7bea6a3a f2fs: not allow to write illegal blkaddr
+7256c78 f2fs: avoid potential deadlock in f2fs_move_file_range
+e62c7c8 f2fs: allow copying file range only in between regular files
+316d66c Revert "f2fs: move i_size_write in f2fs_write_end"
+076d392 f2fs: adjust other changes
+82d90c7 f2fs: recovery missing dot dentries in root directory
+4408fa0 f2fs: get victim segment again after new cp
+b263036 f2fs: handle error case with f2fs_bug_on
+7251241 f2fs: avoid data race when deciding checkpoin in f2fs_sync_file
+c40bb63 f2fs: support an ioctl to move a range of data blocks
+05558af f2fs: fix to report error number of f2fs_find_entry
+848cc04 f2fs: avoid memory allocation failure due to a long length
+0ec58dc f2fs: reset default idle interval value
+e5c0587 f2fs: use blk_plug in all the possible paths
+3230fde f2fs: fix to avoid data update racing between GC and DIO
+97a860d f2fs: add maximum prefree segments
+817adf7 f2fs: disable extent_cache for fcollapse/finsert inodes
+9e297ac f2fs: refactor __exchange_data_block for speed up
+9fe0a7c f2fs: fix ERR_PTR returned by bio
+29477aa f2fs: avoid mark_inode_dirty
+c014d05 f2fs: move i_size_write in f2fs_write_end
+0835949 f2fs: fix to avoid redundant discard during fstrim
+9b8522b f2fs: avoid mismatching block range for discard
+239419d f2fs: fix incorrect f_bfree calculation in ->statfs
+126cd49 f2fs: skip to check the block address of node page
+e7236c4 f2fs: shrink critical region in spin_lock
+e7de018 f2fs: call SetPageUptodate if needed
+a5c7582 f2fs: introduce f2fs_set_page_dirty_nobuffer
+c33c053 f2fs: remove unnecessary goto statement
+4dbfb0c f2fs: add nodiscard mount option
+31a9929 f2fs: fix to redirty page if fail to gc data page
+8e7fc61 f2fs: fix to detect truncation prior rather than EIO during read
+cf2ca65 f2fs: fix to avoid reading out encrypted data in page cache
+d6753ac f2fs: avoid latency-critical readahead of node pages
+29a97fd f2fs: avoid writing node/metapages during writes
+4ace61c2 f2fs: produce more nids and reduce readahead nats
+0109c73 f2fs: detect host-managed SMR by feature flag
+60b41b0 f2fs: call update_inode_page for orphan inodes
+3588d74 f2fs: report error for f2fs_parent_dir
+25454a8 f2fs: find parent dentry correctly
+cd7020d f2fs: fix deadlock in add_link failure
+e93929d f2fs: introduce mode=lfs mount option
+59179ef f2fs: skip clean segment for gc
+40b632e f2fs: drop any block plugging
+a7cceb8 f2fs: avoid reverse IO order for NODE and DATA
+e2d11a4 f2fs: set mapping error for EIO
+33a6dfd f2fs: control not to exceed # of cached nat entries
+f2bd82e f2fs: fix wrong percentage
+21aff10 f2fs: avoid data race between FI_DIRTY_INODE flag and update_inode
+404f7b7 f2fs: remove obsolete parameter in f2fs_truncate
+31d8f32 f2fs: avoid wrong count on dirty inodes
+e7c553c f2fs: remove deprecated parameter
+1ede593 f2fs: handle writepage correctly
+ec37f57 f2fs: return error of f2fs_lookup
+e2c1c18 f2fs: return the errno to the caller to avoid using a wrong page
+5f84429 f2fs: remove two steps to flush dirty data pages
+44e10b5 f2fs: do not skip writing data pages
+bf5019b f2fs: inject to produce some orphan inodes
+798e714 f2fs: propagate error given by f2fs_find_entry
+70e1f93 f2fs: remove writepages lock
+4bafe8e f2fs: set flush_merge by default
+7c51fc9 f2fs: detect congestion of flush command issues
+bba4daa f2fs: avoid unnecessary updating inode during fsync
+cf0a8ba f2fs: remove syncing inode page in all the cases
+17f7ee1 f2fs: flush inode metadata when checkpoint is doing
+84e5298 f2fs: call mark_inode_dirty_sync for i_field changes
+fc0b827 f2fs: introduce f2fs_i_links_write with mark_inode_dirty_sync
+34bad93 f2fs: introduce f2fs_i_blocks_write with mark_inode_dirty_sync
+5609eb7 f2fs: introduce f2fs_i_size_write with mark_inode_dirty_sync
+c908e59 f2fs: use inode pointer for {set, clear}_inode_flag
+584b4bb Revert "f2fs: no need inc dirty pages under inode lock"
+ff0f9cc f2fs: adjust other changes
+b1fda8b f2fs: fix to update dirty page count correctly
+481035b f2fs: flush pending bios right away when error occurs
+ca1e06d f2fs: avoid ENOSPC fault in the recovery process
+d5c80e2 f2fs: make exit_f2fs_fs more clear
+40cdbbb f2fs: use percpu_counter for total_valid_inode_count
+287a057 f2fs: use percpu_counter for alloc_valid_block_count
+f6565d8 f2fs: use percpu_counter for # of dirty pages in inode
+c5154ef f2fs: use percpu_counter for page counters
+3343cbc f2fs: use bio count instead of F2FS_WRITEBACK page count
+3fb717a f2fs: manipulate dirty file inodes when DATA_FLUSH is set
+a4ae836 f2fs: add fault injection to sysfs
+6f1b100 f2fs: no need inc dirty pages under inode lock
+e904b4e f2fs: fix incorrect error path handling in f2fs_move_rehashed_dirents
+9305cbb f2fs: fix i_current_depth during inline dentry conversion
+c3cdd11 f2fs: correct return value type of f2fs_fill_super
+123ed31 f2fs: fix deadlock when flush inline data
+cc2a415 f2fs: avoid f2fs_bug_on during recovery
+16d62de f2fs: show # of orphan inodes
+00ac403 f2fs: support in batch fzero in dnode page
+cda1c38 f2fs: support in batch multi blocks preallocation
+a76542a f2fs: make atomic/volatile operation exclusive
+05e1d59 f2fs: use mnt_{want,drop}_write_file in ioctl
+4178a35 f2fs: do not preallocate block unaligned to 4KB
+1a5f694 f2fs: read node blocks ahead when truncating blocks
+0a2e644 f2fs: fallocate data blocks in single locked node page
+3134506 f2fs: fix inode cache leak
+c543825 fscrypto/f2fs: allow fs-specific key prefix for fs encryption
+ba6485f f2fs: avoid panic when truncating to max filesize
+efe5c46 f2fs: fix incorrect mapping in ->bmap
+b312b93 f2fs: remove an obsolete variable
+0591e26 f2fs: don't worry about inode leak in evict_inode
+58c3885 f2fs: shrink size of struct seg_entry
+dc831b1 f2fs: reuse get_extent_info
+24d0539 f2fs: remove unneeded memset when updating xattr
+e8c87ba f2fs: remove unneeded readahead in find_fsync_dnodes
+2041dfd f2fs: retry to truncate blocks in -ENOMEM case
+145b7d9 f2fs: fix leak of orphan inode objects
+88f4a8f f2fs: revisit error handling flows
+063622a f2fs: inject ENOSPC failures
+d2ff3fd4 f2fs: inject page allocation failures
+03a7948 f2fs: inject kmalloc failure
+8722723 f2fs: add mount option to select fault injection ratio
+485f311 f2fs: use f2fs_grab_cache_page instead of grab_cache_page
+b25d5c8 f2fs: introduce f2fs_kmalloc to wrap kmalloc
+64a8266 f2fs: add proc entry to show valid block bitmap
+262bda6 f2fs: introduce macros for proc entries
+19cdd63 f2fs: factor out fsync inode entry operations
+36e6290 f2fs: fix to clear page private flag
+46c8611 f2fs: fix to clear private data in page
+bc1a7ad f2fs: fix to return 0 if err == -ENOENT in f2fs_readdir
+4c1a801 f2fs: move node pages only in victim section during GC
+f600327 f2fs: be aware of invalid filename length
+d44cd34 f2fs: issue cache flush on direct IO
+8ca94a6 f2fs: set fsync mark only for the last dnode
+22c1f10 f2fs: report unwritten status in fsync_node_pages
+f97eda1 f2fs: split sync_node_pages with fsync_node_pages
+102e5599 f2fs: avoid writing 0'th page in volatile writes
+fb8a44f f2fs: avoid needless lock for node pages when fsyncing a file
+4a2b32e f2fs: flush dirty pages before starting atomic writes
+e9c93df f2fs: don't invalidate atomic page if successful
+df5d744 f2fs: give -E2BIG for no space in xattr
+aaa804f f2fs: remove redundant condition check
+b51ff7b f2fs: unset atomic/volatile flag in f2fs_release_file
+6686b34 f2fs: fix dropping inmemory pages in a wrong time
+c075727 f2fs: add BUG_ON to avoid unnecessary flow
+f3f5940 f2fs: fix to convert inline directory correctly
+3c075a2 f2fs: show current mount status
+506da35 f2fs: treat as a normal umount when remounting ro
+3b86ef2 f2fs: give -EINVAL for norecovery and rw mount
+6f467e6 f2fs: recover superblock at RW remounts
+5f8b3e6 f2fs: give RO message when recovering superblock
+9c1cf4e ext4/fscrypto: avoid RCU lookup in d_revalidate
+de682fd fscrypto: don't let data integrity writebacks fail with ENOMEM
+7181e40 f2fs: use dget_parent and file_dentry in f2fs_file_open
+70b58df fscrypto: use dget_parent() in fscrypt_d_revalidate()
+b828d24 f2fs: retrieve IO write stat from the right place
+9c7385c f2fs crypto: fix corrupted symlink in encrypted case
+76234e9 f2fs: cover large section in sanity check of super
+d787957 f2fs/crypto: fix xts_tweak initialization
+95b21be f2fs: submit node page write bios when really required
+d0fbbf4 f2fs: add missing argument to f2fs_setxattr stub
+3954a7f f2fs: fix to avoid unneeded unlock_new_inode
+889a9b5 f2fs: clean up opened code with f2fs_update_dentry
+e4c3b75 f2fs: declare static functions
+2e39a0f f2fs: use cryptoapi crc32 functions
+dfbe718 f2fs: modify the readahead method in ra_node_page()
+a0550dc f2fs crypto: sync ext4_lookup and ext4_file_open
+6fb952f fs crypto: move per-file encryption from f2fs tree to fs/crypto
+bf2eea02 f2fs: mutex can't be used by down_write_nest_lock()
+be70701 f2fs: fix to avoid deadlock when merging inline data
+f4656b2 f2fs: introduce f2fs_flush_merged_bios for cleanup
+032c5e1 f2fs: introduce f2fs_update_data_blkaddr for cleanup
+3e781ae f2fs crypto: fix incorrect positioning for GCing encrypted data page
+1dee59a f2fs: fix incorrect upper bound when iterating inode mapping tree
+00a8db2 f2fs: avoid hungtask problem caused by losing wake_up
+59492d9 f2fs: trace old block address for CoWed page
+f488924 f2fs: try to flush inode after merging inline data
+27918b0 f2fs: show more info about superblock recovery
+287f25e f2fs: fix the wrong stat count of calling gc
+4dd8773 f2fs: remain last victim segment number ascending order
+031391d f2fs: reuse read_inline_data for f2fs_convert_inline_page
+b425193 f2fs: fix to delete old dirent in converted inline directory in ->rename
+5f348d2 f2fs: detect error of update_dent_inode in ->rename
+2cf1cef f2fs: move sanity checking of cp into get_valid_checkpoint
+5aadda7 f2fs: slightly reorganize read_raw_super_block
+0795fd3 f2fs: reorder nat cache lock in cache_nat_entry
+a3d71a8 f2fs: split journal cache from curseg cache
+7773abd f2fs: enhance IO path with block plug
+77a0511 f2fs: introduce f2fs_journal struct to wrap journal info
+ef8ae9e f2fs crypto: avoid unneeded memory allocation when {en/de}crypting symlink
+b14f398 f2fs crypto: handle unexpected lack of encryption keys
+433b036 f2fs crypto: make sure the encryption info is initialized on opendir(2)
+9bc141b f2fs: support revoking atomic written pages
+8928d12 f2fs: split drop_inmem_pages from commit_inmem_pages
+306fcd3 f2fs: avoid garbage lenghs in dentries
+98a8e0c f2fs crypto: sync with ext4's fname padding
+cac40f5 f2fs: use correct errno
+b94612c f2fs crypto: add missing locking for keyring_key access
+b6313a7 f2fs crypto: check for too-short encrypted file names
+1ac40ac f2fs crypto: f2fs_page_crypto() doesn't need a encryption context
+d2eae15 f2fs crypto: fix spelling typo in comment
+dba48c9 f2fs crypto: replace some BUG_ON()'s with error checks
+1e54ed8 f2fs: increase i_size to avoid missing data
+9919745 f2fs: preallocate blocks for buffered aio writes
+8b62e13 f2fs: move dio preallocation into f2fs_file_write_iter
+4d1a93e f2fs: fix missing skip pages info
+10a5d7a f2fs: introduce f2fs_submit_merged_bio_cond
+86ceeb6 f2fs: fix conflict on page->private usage
+fef6bf6 f2fs: flush bios to handle cp_error in put_super
+366f268 f2fs: wait on page's writeback in writepages path
+03a935c f2fs: fix endianness of on-disk summary_footer
+dac4ee2 f2fs: speed up handling holes in fiemap
+24490a7 f2fs: introduce get_next_page_offset to speed up SEEK_DATA
+93bd71a f2fs: remove unneeded pointer conversion
+67b489f f2fs: simplify __allocate_data_blocks
+c30cf2f f2fs: simplify f2fs_map_blocks
+405c3ca f2fs: introduce lifetime write IO statistics
+9bf1da8 f2fs: give scheduling point in shrinking path
+eb6d71a f2fs: improve shrink performance of extent nodes
+2166db9 f2fs: don't set cached_en if it will be freed
+4afee6d f2fs: move extent_node list operations being coupled with rbtree operation
+b28d1e7 f2fs: reconstruct the code to free an extent_node
+e6be049 f2fs: use wq_has_sleeper for cp_wait wait_queue
+68da6df f2fs: avoid unnecessary search while finding victim in gc
+9339110 f2fs: delete unnecessary wait for page writeback
+798b87b f2fs: use wait_for_stable_page to avoid contention
+0626084 f2fs: enhance foreground GC
+c4db9b1 f2fs: don't need to call set_page_dirty for io error
+42536f6 f2fs: avoid needless sync_inode_page when reading inline_data
+f0e394c f2fs: don't need to sync node page at every time
+a1285fe f2fs: avoid multiple node page writes due to inline_data
+fe4b3ba f2fs: do f2fs_balance_fs when block is allocated
+30e5666 f2fs: fix to overcome inline_data floods
+1842bc3 f2fs: use writepages->lock for WB_SYNC_ALL
+770ab47 f2fs: remove needless condition check
+1c842b1 f2fs: correct search area in get_new_segment
+50c55be f2fs: export dirty_nats_ratio in sysfs
+6b64c48 f2fs: flush dirty nat entries when exceeding threshold
+5f8d4ce f2fs: relocate is_merged_page
+c6c96b2 f2fs: should unset atomic flag after successful commit
+53518d4 f2fs: fix wrong memory condition check
+4056ad1 f2fs: monitor the number of background checkpoint
+3a7b899 f2fs: detect idle time depending on user behavior
+97ced3b f2fs: introduce time and interval facility
+9866bc3 f2fs: skip releasing nodes in chindless extent tree
+47f6cee f2fs: use atomic type for node count in extent tree
+4a9e7c2 f2fs: recognize encrypted data in f2fs_fiemap
+34234d7 f2fs: clean up f2fs_balance_fs
+e5bc39c f2fs: remove redundant calls
+9403234 f2fs: avoid unnecessary f2fs_balance_fs calls
+a5768e7 f2fs: check the page status filled from disk
+59ef1fd f2fs: introduce __get_node_page to reuse common code
+8dc7ec3 f2fs: check node id earily when readaheading node page
+f631b99 f2fs: read isize while holding i_mutex in fiemap
+c4cd547 Revert "f2fs: check the node block address of newly allocated nid"
+e7e85b3 f2fs: cover more area with nat_tree_lock
+fa7b5fd f2fs: introduce max_file_blocks in sbi
+cda3c06 f2fs crypto: check CONFIG_F2FS_FS_XATTR for encrypted symlink
+49df8e0 f2fs: introduce zombie list for fast shrinking extent trees
+734ba06 f2fs: monitor zombie_tree count
+606a220 f2fs: use IPU for fdatasync
+ed1f6e4 f2fs: write pending bios when cp_error is set
+7c8315f f2fs: remove f2fs_bug_on in terms of max_depth
+9e7ff28 f2fs: fix f2fs_ioc_abort_volatile_write
+5559b4c f2fs: fix to skip recovering dot dentries in a readonly fs
+a18130f f2fs: load largest extent all the time
+2503411 f2fs: use i_size_read to get i_size
+dd470ae f2fs: early check broken symlink length in the encrypted case
+ae2d586 f2fs: clean up f2fs_ioc_write_checkpoint
+89048db f2fs: add a max block check for get_data_block_bmap
+bfee74c f2fs: fix bugs and simplify codes of f2fs_fiemap
+69e3302 f2fs: let user being aware of IO error
+2f5ee56 f2fs: add missing f2fs_balance_fs in __recover_dot_dentries
+c2e3b6e f2fs: declare static function
+29f0504 f2fs: avoid f2fs_lock_op in f2fs_write_begin
+3e1fecc f2fs: return early when trying to read null nid
+170852d f2fs: introduce prepare_write_begin to clean up
+f37a3bb f2fs: don't convert inline inode when inline_data option is disable
+cbb6586 f2fs: report error of do_checkpoint
+9dd0769 f2fs: call f2fs_balance_fs only when node was changed
+8725b6a f2fs: reduce covered region of sbi->cp_rwsem in f2fs_map_blocks
+6c3f119 f2fs: record node block allocation in dnode_of_data
+84a6bb9 f2fs: avoid unnecessary f2fs_gc for dir operations
+e827efa f2fs: check inline_data flag at converting time
+e90dce2 f2fs: speed up shrinking extent tree entries
+44663fb f2fs: use atomic variable for total_extent_tree
+1ea1af4 f2fs: add a tracepoint for sync_dirty_inodes
+7f1f917 f2fs: optimize the flow of f2fs_map_blocks
+8c476b2 f2fs: support data flush in background
+da66927 f2fs: stat dirty regular/symlink inodes
+cd3b910 f2fs: introduce new option for controlling data flush
+35f9a7f f2fs: record dirty status of regular/symlink inode
+a5e79b0 f2fs: introduce __f2fs_commit_super
+e15a2c3 f2fs: relocate tracepoint of write_checkpoint
+aece2b2 f2fs: don't grab super block buffer header all the time
+09056a8 f2fs: backup raw_super in sbi
+2d2677e f2fs: fix to reset variable correctlly
+54695d7 f2fs: introduce __remove_dirty_inode
+259a5c2 f2fs: introduce dirty list node in inode info
+0282536 f2fs: rename {add,remove,release}_dirty_inode to {add,remove,release}_ino_entry
+f178eda f2fs: add symbol to avoid any confusion with tools
+b6e1390 f2fs: do more integrity verification for superblock
+6cd11ad f2fs: fix to update variable correctly when skip a unmapped block
+8ae6731 f2fs: write only the pages in range during defragment
+d985a31 f2fs: clean up node page updating flow
+addbc30 f2fs: use lock_buffer when changing superblock
+61ebf86 f2fs: refactor f2fs_commit_super
+1a3b4f8 f2fs: enhance the bit operation for SSR
+af38465 f2fs: fix to convert inline inode in ->setattr
+16a57df f2fs: use sbi->blocks_per_seg to avoid unnecessary calculation
+5e695c2 f2fs: kill f2fs_drop_largest_extent
+6429e18 f2fs: clean up argument of recover_data
+b7638c7 f2fs: clean up code with __has_cursum_space
+658f2a6 f2fs: clean up error path in f2fs_readdir
+cdc3d76 f2fs: do not recover from previous remained wrong dnodes
+a6da3f4 f2fs: avoid deadlock in f2fs_shrink_extent_tree
+f0419d1 f2fs: fix to report error in f2fs_readdir
+5cba79b f2fs: clear page uptodate when dropping cache for atomic write
+07c0813 f2fs: optimize __find_rev_next_bit
+abeae0b f2fs: fix to remove directory inode from dirty list
+38154a3 f2fs: fix to enable missing ioctl interfaces in ->compat_ioctl
+291236a f2fs: fix memory leak of kobject in error path of fill_super
+16e77b9 f2fs: support file defragment
+dda77e5 f2fs: commit atomic written page in LFS mode
+b7d1aa3 f2fs: report error of f2fs_create_root_stats
+443e9d8 f2fs: Fix a system panic caused by f2fs_follow_link
+c3e0a91 f2fs: catch up to v4.4-rc1
+
+   * manifest/
+ff6f533 Nuke SetupWizard
+841ffa7 Rename branch to 'nougat'
+bd4d0c0 Remove these shits
+
+   * packages/apps/Messaging/
+7a10eaa Merge pull request #1 from Andersonmendes2016/nougat
+f80d3b1 Add round icons
+
+   * packages/apps/Settings/
+0194928 Settings: display fstype for mounted volumes
+f8d7c37 Unify the DatePicker Dialog and MIN_DATE
+a3a1a75 Fix the memory leak in DrawOverlayDetails
+37f379a Improve Wi-Fi Settings UI in guest mode
+cb9a9e9 Show USB Mode Dialog
+a9da51a Settings: avoid a NullPointerException in security
+987f56d ChooseLockGeneric: fix crash
+627cb71 Settings : Rebuild app list after reset
+25299b9 android beam: Make the summary string up-to-date
+384ac9c Get rid of framework holo actionbar buttons
+b5400af Settings: disable the other learn more too to prevent crash
+9697c04 Settings: Animate pin/pattern fragment only if available
+5ec71e4 Settings: background not set in main Settings screen
+6d1092a Title is different after tapping "Memory used by apps"
+7cc9e29 Settings: Tint Black Drawables
+41fb6da Settings: Wi-Fi WPS Materialized icon
+64fe7b3 bluetooth: Show a refresh icon on the select devices screen
+03a9f03 location: Enable 3dot menu
+00c6b7a Open app when clicking on icon in App Info screen
+ad8423d Fix memory leak in Bluetooth settings
+5ee6a16 Settings: Fix cannot search paired BT device issue.
+f0bceb6 Fix crash when rotating HighPowerDetail dialog
+1c982fc Fix NPE when rotating "Saved networks" screen
+ed7d972 Fix NPE in SettingsPreferenceFragment
+65c2a8d Fix InstantiationException when rotating Notification access settings
+8c4abbd Settings: Disable OTA and remove demo mode
+049bcd3 Fix two same BT devices are shown
+e9a8ce2 Add fastscroll to the Manage applications screen
+88e7621 Always show screen on time
+a14005a Settings: Use seekbar to allow setting arbitrary animation values
+a87f491 Fix null point exception in WriteSettingsDetails
+06cfdc6 Optimized Code: call direct method to get integer extra
+a8dc70a Optimize code on get UidDetail in AppDataUsage
+5fe112d Bluetooth: leave screen off for permission request
+28d212e RejectedExecutionException in DataUsageLIst
+21728f4 Settings: Fix wrong wifi drawable in screen zooming preview
+bf5a2e3 Redundant waiting time of keyguard unlocking after reboot
+45e4c03 Show search results when query string contains trailing space
+34e9972 Correct fingerprint position during setup
+4d714c0 Fix synchronization of Wi-Fi hotspot switch
+820f10c PowerUsageFeatureProviderImpl: little cleanup
+cc5123a Update PT-BR translations
+1efaa5b Remove SupportManager
+
+   * packages/apps/Venom/
+7bc86dd Merge pull request #1 from Andersonmendes2016/nougat
+ea71d03 UP PT-BR translations
+5699f6a Remove useless text in viper_devices
+83a74a4 Add kenzo and harpia
+
+   * vendor/ViperOTA/
+bddc269 Update viper_osprey.xml
+9434625 Update viper_osprey.xml
+26e52ab Update viper_osprey.xml
+efdad6f test3
+
+   * vendor/viper/
+f19b4b1 vendor: Allow platform_app to run su_exec() (2/2)
+a033652 vendor: Allow system_server to run su_exec() (2/2)
+93ebb41 vendor: sepolicy: Allow system_app to run su_exec()
+2d913fd Remove su
+d650c49 roomservice: Change default branch to nougat
+91778df Introduce viper.devices and cleanup
+448e224 [SQUASHED] New roomservice roomservice delivers you lunch combos from the SlimRoms github.
+b5324fc extract_utils: fix extracting XML files containing binary characters
+86b4e3c Nuke Lineage SetupWizard
+
+====================
+     05-20-2017
+====================
+
+
+   * device/qcom/sepolicy/
+50c1e23 this viper no cm thanks Andersonmendes
+
+   * packages/apps/Venom/
+8fa06e2 Add Anderson Mendes new maintainer
+b02a30a Add Bruno Dantas new maintainer
+
+   * packages/services/ThemeInterfacer/
+5aeba49 Add interface to get API version and app authentication status
+069e629 Fix permissions for CTS [2/2]
+
+   * vendor/ViperOTA/
+6769515 test2
+25e807f test
+49340cc Initial Devices
+
+   * vendor/viper/
+aca5c9a Add new bootanimation
+
+   * vendor/xiaomi/
+d209e7e mido: drop prebuilt wlan module
+
+====================
+     05-19-2017
+====================
+
+
+   * manifest/
+597240c track our themeinterfacer
+515a073 added Flash ROM remote to our manifest
+0b59988 Merge pull request #2 from RMarchetto96/n-mr1
+7f296e6 remove all CMTE shits
+05c6095 Remove "interfacer" and track latest "Theme Interfacer" from Flash ROM GitHub
+
+   * packages/apps/Dialer/
+77b4147 Dialer: lock screen appear before incoming call screen
+
+   * packages/apps/Jelly/
+96e4243 Automatic translation import
+7c65684 Jelly: EditTextExt: Remove shader before drawing
+0a0fcbd Jelly: Don't reload webview on screen rotation
+
+   * packages/apps/Venom/
+d637075 Add EsromG5 new maintainer
+afd0ac0 Fix
+5858632 Add Rkschunk new maintainer
+b9a09cc RIP redmi2
+4d226a5 Welcome Carlos Arriaga new maintainer
+33e957f Unify with OP3T
+2dd1103 Add OnePlus 3T Device maintainer
+2b289e7 Fix seekbar attribute grabbing
+c7d2888 New devices and maintainers
+f17ac6a Fix and new device
+b0b6198 Add mainteiner for Moto G Falcon
+1c6e848 Revamp Network Traffic
+4f19cc1 New image of the network traffic meter icon
+9d64c26 Network Traffic [2/2]
+afe67cd Revamp UI
+901d09e Add option to disable auto brightness icon in brightness slider [2/2]
+4fc263b Add Viper About, Changelog, Maintainers (2/3)
+861fbca Battery tile: allow to disable custom battery style [2/2]
+eb2bdee Move Light/Dark to the venom [2/2]
+7aca576 Fix Derps
+414053c Lockscreen Weather squash:
+9186151 Custom Carrier Label & Carrier Label Placement and Color & Size [2/2] [Squashed]
+f1145cd Add Clear All Button to Recents [2/2]
+35c9b08 OmniJaws qs tile integration [3/3]
+b06a441 Add custom QS header images [2/2]
+524ade8 Custom QS rows/columns [2/2]
+61a3761 Custom small QS tiles [2/2]
+5f3129e Add new battery styles
+e1e3550 Venom: Add charging sounds settings [1/3]
+ac5bb09 [2/3] CMParts: single hand for hardware keys
+341c6d5 [1/2] Allow navigation bar home actions to be configurable
+8c6145a Fix derps and Reorganize
+42a57eb Pixel Navbar animation toggle [2/2]
+2e8743a Venom: Bring in CMParts resource
+b3419bb Added modded marginov color picker
+4321b70 Venom: Add CustomSeekBarPreference
+fc7783f Welcome to Venom
+
+   * packages/apps/ViperOTA/
+83efa7c Update README.md
+b7d5d2d Use ro.ota.build.date instead of ro.build.date.utc
+7ee2be0 Fix translations
+
+====================
+     05-18-2017
+====================
+
+
+   * frameworks/base/
+f778642 Automatic translation import
+
+   * hardware/qcom/fm/
+68e8f7d Automatic translation import
+
+   * manifest/
+596bcab Merge pull request #1 from RMarchetto96/n-mr1
+bf0236b don't track hexolibre theme, It's deprecated CMTE
+
+   * packages/apps/Camera2/
+206a9cd Automatic translation import
+
+   * packages/apps/CellBroadcastReceiver/
+45cead5 Automatic translation import
+
+   * packages/apps/Contacts/
+00c1cbe Automatic translation import
+
+   * packages/apps/ContactsCommon/
+34fd53c Automatic translation import
+
+   * packages/apps/CustomTiles/
+39b0e6d Automatic translation import
+
+   * packages/apps/Dialer/
+11b9297 Automatic translation import
+
+   * packages/apps/FMRadio/
+5704c07 Automatic translation import
+
+   * packages/apps/PhoneCommon/
+116dd81 Automatic translation import
+
+   * packages/apps/Settings/
+18fd53a Automatic translation import
+f55afa5 Merge pull request #1 from CarlosArriagaCM/n-mr1
+4fab3a1 Translation into Spanish 3/3
+0aef8af Translation into Spanish 2/3
+66be148 Translation into Spanish 1/3
+
+   * packages/apps/Snap/
+48e6c6d Automatic translation import
+
+   * packages/apps/TvSettings/
+dcc5072 Automatic translation import
+
+   * packages/apps/UnifiedEmail/
+226fafc Automatic translation import
+
+   * packages/resources/devicesettings/
+bd3c549 Automatic translation import
+
+   * packages/services/Telephony/
+13c66d4 Automatic translation import
+
+   * vendor/cmsdk/
+a4df9e2 Automatic translation import
+
+   * vendor/viper/
+8ac307a Update Pixel Launcher O-3952143
+
