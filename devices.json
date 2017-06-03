@@ -174,5 +174,15 @@
       "afh_folder":"https://www.androidfilehost.com/?w=files&flid=184667",
       "maintainer_name":"Júlio Cezar (bluereptile)",
       "xda_thread":"https://forum.xda-developers.com/k5-plus/development/rom-viperos-v1-1-t3613696"
+   },
+   {
+      "name":"Zuk Z2 Plus",
+      "brand":"Lenovo",
+      "codename":"z2_plus",
+      "afh_folder":"https://www.androidfilehost.com/?a=show&w=files&flid=186518",
+      "maintainer_name":"Ankit Singh(gamingex)",
+      "xda_thread":"https://forum.xda-developers.com/lenovo-zuk-z2/development/rom-viperos-t3616238"
    }
 ]
+
+
