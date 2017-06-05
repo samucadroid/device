@@ -1,0 +1,239 @@
+====================
+     06-04-2017
+====================
+
+
+   * device/asus/Z00L/
+d098c5e first commit
+19cacc8 your comments
+
+====================
+     06-03-2017
+====================
+
+
+   * device/asus/Z00L/
+ef3b85a first commit
+
+====================
+     06-02-2017
+====================
+
+
+====================
+     06-01-2017
+====================
+
+
+====================
+     05-31-2017
+====================
+
+
+====================
+     05-30-2017
+====================
+
+
+====================
+     05-29-2017
+====================
+
+
+====================
+     05-28-2017
+====================
+
+
+====================
+     05-27-2017
+====================
+
+
+   * build/
+5b8480a Revert "Just Team"
+
+   * device/asus/msm8916-common/
+f61ad66 msm8916-common: gps: Squashed update to LA.BR.1.2.9_rb1.14
+ffc73d1 msm8916-common: Bump opengles version to 3.2
+46db5b1 msm8916-common: Update blobs from crackling
+
+   * frameworks/base/
+2421683 SystemUI: Misc fixes for right (custom) lockscreen shortcuts
+902825a base: enable power save config of system apps [1/2]
+8a266f6 use FgThread.class instead of UiThread.class for lock object
+e8d7a5d Timeout should not include sleep time.
+d43d6c9 Fixes sharedUserId change issue.
+a4d641b an extra animation when finish a visible paused activity
+d538e6b Fix a crashed when clicking list item and button meanwhile
+535a12e Make BluetoothStateChangeCallback oneway to prevent waiting on response.
+b2a4c10 skip schedule broadcast and startservice if the user is stopped
+86071d8 Fix derps
+2330c17 Revert "Left handed navbar during landscape mode"
+6172de3 DayNight: Change derp again
+54c451d Revert "Scroll: modified velocitytracker"
+5f2db62 Base: Navigation bar options (1/2)     -Height and width
+ea80f70 input: support dynamic navigation bar toggling
+1cb88d4 Fix build
+
+   * kernel/asus/msm8916/
+cfc1fe0 drivers/staging: prima: Import latest CAF release
+e075c42 Merge tag 'LA.BR.1.2.9-02910-8x16.0' of https://source.codeaurora.org/quic/la/kernel/msm-3.10 into HEAD
+
+   * manifest/
+6d592a5 Track VPapers
+9186ed5 Track FMRadio LineageOS -> ViperOS
+5435fc4 manifest: Rename to ViperOS-Devices
+
+   * packages/apps/CMParts/
+73d1d36 CMParts: remove extra padding from app light preference
+
+   * packages/apps/FMRadio/
+2c2520d FMRadio: Add overlay to enable/disable FM without Headphone
+e9fcff3 Use FMRadio without wired headset/headphones
+
+   * packages/apps/Jelly/
+8f1365c Jelly: Handle screenLayout changes
+
+   * packages/apps/Settings/
+e2b457b Remove OTA preference if build isn't official or app isn't installed
+c40d226 Display a summary related to automatic brightness only if relevant for this device
+23fed6f ConditionManager: don't crash when trying to add unexpected condition
+70791f0 Settings: PreviewPagerAdapter: copy the full theme
+200a02b Fix time does not change after rotating device
+9affd90 Settings: enable power save config of system apps [2/2]
+dfd5865 Squash commit of SAR and IC Code.
+8d40866 Fix crash when calling remove() with a null variable
+35a7b17 do not include saved network in scan list
+
+   * packages/apps/VPapers/
+7b8effb Merge pull request #2 from Andersonmendes2016/nougat
+34f566b VPapers: some fixes
+74cad02 Merge pull request #1 from Andersonmendes2016/nougat
+7ffed4f VPapers: Add Wallpapers
+
+   * packages/apps/Venom/
+db83f90 Update PT-BR translations
+bafd6c7 Prevent fc when toggling navigation bar     To reproduce: tap on the preference multiple times, systemui will restart
+955e424 HW Keys backlight: Adjustments
+f1f7a66 Updates
+91dc67f Don't show button backlight as enabled when hwkeys is disabled
+bc74469 Navbar dimension: Remove 0dp
+e271cfc Settings: Navigation bar options (2/2) -Height and width
+1e7ae96 HW keys tweaks (2/2)
+a899b82 Navigation bar enable/disable
+a08ed46 CustomSeekBar: fix progressbar glitch with custom min-max values when CustomSeekBar is called, it does: mSeekBar.setMax(mMax - mMin); assuming mMin=0 and mMax=100 if they are not set with settings:min or max through the related menu xml. So if we set one of those values in the related menu java class with the available public voids (setMax(value) and setMin(value)) the seekbar doesn't get the new min and max thus the user can't slide it to the max position.
+e6fbaa9 Move navbar to button settings
+
+   * packages/apps/ViperOTA/
+4c088c0 Update theme
+a76a485 Implement android_version variable
+7f44d31 Rename Viper to ViperOS
+d725650 Automatic translation import
+76d4f48 Replace generic logo with back button
+
+   * packages/services/OmniJaws/
+a16c1df OmniJaws: Switch to Yahoo provider by default
+
+   * packages/services/Telephony/
+f5fc7f4 Merge remote-tracking branch 'los/cm-14.1' into nougat
+9d67fca Fix minor inconsistency in the CDMA call settings
+
+   * system/sepolicy/
+3b9c74b sepolicy: Allow priv_app to run su_exec()
+
+   * vendor/asus/
+986a46c msm8916-common: Update blobs from crackling
+
+   * vendor/viper/
+e87af58 Change OTA url and add ro.viper.buildtype prop
+c3dc37d Viper v1.1
+252b4cb Build VPapers
+8d3f53d overlay: Enable Wi-Fi by default on first boot
+4b6dee1 Show full alarm info
+c7026f9 Go away mint, nobody likes you
+6842a31 Change accent color for AOSP keyboard
+8bfcbf5 roomservice: Rename to ViperOS-Devices
+29117cd OTA: Add missing prop
+
+====================
+     05-26-2017
+====================
+
+
+   * build/
+8379b26 Clean option: deviceclean
+
+   * frameworks/base/
+6fbf256 Revert "Runtime toggle of navbar"
+039c457 update navbar icons and pixel c dimensions     *navbar icons from pixel c, pixel, pixel xl     *we still need some more icons made for the other dpis     *add pixel c opa dimens
+51051c9 [Base] HW keys tweaks (1/2) PS: to enable this feature you need to set to true <bool name="config_hwKeysPref">true</bool> in device overlay. Of course this is for devices with hardware and capacitive keys ;)
+d20644b notifications: Change guts text color
+559d5a9 Net monitor: fix visual glitch on statusbar expand when autohide enabled
+f52a8f8 remove network coloring and make network meter play nice with dark mode
+7877107 Link traffic icon color to text color
+d96c8ec Bluetoothtile: Rectify and fix compilation
+44350e7 FWB: Ability to hide superuser status bar icon [1/2]
+ff8a3f8 NetworkTraffic: Hide when not connected to network
+28e944e Scroll: modified velocitytracker
+95bbba5 Add keylayout for Xbox One controller
+18a54c4 Make the allPendingIntents add operation thread-safe.
+436c886 ConnectivityService: safer locking
+293cd52 Added mapping files for DualShock3 and DualShock4
+49f9cff When monkey test, the object of mHost throws NullPointerException.
+cb927e8 Fix NPE when call stack.setLauncheTime.
+ef49982 fix incorrect context classloader initialization in system_server
+f6c7cf3 Ensure qs detail item isn't focusable
+1444c1e QS BluetoothTile proiritizes connected device
+f9e5af7 QSTiles: set disconnect callback in bluetooth details list adapter
+54b3811 Allow WiFi & Bluetooth tile details to scroll
+5471aad Allow themers to customize battery frame color on darkintensity
+301a479 Big battery circle: fix custom themes compatibility
+eb9acb5 Make the view more compact and show more entries per page
+ea7d467 sqlite query perf: try to avoid getCount()
+8d0b1a3 sqlite query perf: clean up in-flight statements on cursor close
+52a9db2 sqlite query perf: try to reuse in-flight statements
+a3afd53 sqlite query perf: better window selection in common case
+fdd8d8e Limit the number of start or bind service
+e6cb71a Do not remove the alarm listener if it still need to be used
+e071a95 Fix the IndexOutOfBoundsException issue.
+dd323b3 Fix double free issue in ResTable.
+bd16070 Make sdcard volumes visible even when FBE is enabled
+b4b2e7a Consider allow-in-power-save-except-idle whitelist while updating rules.
+ba8242f system_server crash in ArrayMap.
+5af833c Format Japanese numbers using national format when in Japan.
+84a62f3 base: update updateUsbStateBroadcastIfNeeded types
+dce9a4c Check and send usb state broadcast when devices boots
+b72d072 Only send usb disconnect intents after boot.
+6d29276 Revert "SystemUI: attach a queue to media player notifications"
+04be5b8 More theme changes Thanks to @Adarsh-MR
+
+   * kernel/asus/msm8916/
+339052e fscrypt: remove broken support for detecting keyring key revocation
+bb0a5e0 fscrypt: catch up to v4.11-rc1
+69a940e fscrypt: catch fscrypto_get_policy in v4.10-rc6
+b2abcf4 unix: properly account for FDs passed over unix sockets
+
+   * packages/apps/PackageInstaller/
+4e7827f DayNight theme
+
+   * packages/apps/Settings/
+3bb0d02 Revert "Implement device gestures and doze settings in Gestures section"
+dd3ea2e Revert "Fix derps"
+617c60b Avoid FC when entering Accessibility Settings with a font size of 100%
+c1bb31b DisplaySettings: font size in 5% steps from 80% to 130%
+83bbfce OTA: Update activity name
+
+   * packages/apps/VPapers/
+bea1891 VPapers: remove SolidColor
+655225e fix build
+
+   * packages/apps/Venom/
+6ee04c4 Move Ability to hide superuser status bar icon for misc
+e5dd2ec Fix derp
+
+   * vendor/viper/
+79d9aec Merge branch 'nougat' of https://github.com/ViperOS-Project/android_vendor_viper into nougat
+cf58922 roomservice: fix a weird error
+dd94ac2 OTA: Adjust and build only in official
+
